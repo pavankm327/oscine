@@ -1,0 +1,764 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tag -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Oscine">
+    <meta name="keywords" content="real estate, property, property search, agent, apartments, booking, business, idx, housing, real estate agency, rental">
+    <meta name="author" content="http://oscinetrading.com/">
+    <title>Oscine | Products</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700&amp;display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,700;1,400&amp;display=swap" rel="stylesheet">
+
+    <!-- Required style of the theme -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/webfonts/flaticon/flaticon.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/layerslider.css">
+    <link rel="stylesheet" href="assets/css/template.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/colors/color.css">
+    <link rel="stylesheet" href="assets/css/loader.css">
+    <style>
+        /* Ensure the filter tabs are vertically aligned and aligned to the left */
+        .mix-tab ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .mix-tab ul li {
+            margin-bottom: 0px;
+            list-style-type: none;    
+        }
+        ul.nav-tab-border-active .mixitup-control-active {
+            border-color: transparent!important;
+        }
+
+        /* Make sure columns stack vertically on smaller screens */
+        @media (max-width: 767.98px) {
+            .col-md-2, .col-md-10 {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+    <style>
+        /* Base Styles */
+        .nav-tab-border-active {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            border-radius: 8px;
+        }
+    
+        .nav-tab-border-active > li {
+            position: relative;
+            padding: 10px;
+            cursor: pointer;
+            border-bottom: 1px solid #ddd;
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+    
+        .nav-tab-border-active > li > .subcategories {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, transform 0.3s ease;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            transform: scaleY(0);
+            transform-origin: top;
+        }
+    
+        .nav-tab-border-active > li.active > .subcategories {
+            max-height: 500px; /* Ensure this is enough to fit the content */
+            padding-top: 15px; /* Adjust as needed */
+            transform: scaleY(1);
+        }
+    
+        .subcategories > li {
+            cursor: pointer;
+            font-size: 13px;
+            color: #aaa;
+            font-weight: 500;
+            letter-spacing: 1px;
+            line-height: 24px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: relative;
+            padding: 5px 10px;
+            transition: color 0.3s ease;
+        }
+    
+        .subcategories > li::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background-color: #007bff; /* Underline color */
+            transition: width 0.3s ease;
+        }
+    
+        .subcategories > li:hover::after {
+            width: 100%;
+        }
+    
+        ul.subcategories > li.mixitup-control-active {
+            color: #a81919;
+        }
+    </style>
+    <style>
+        /* Container Styles */
+        .property-grid-2 {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+    
+        /* Image Styles */
+        .thumbnail-img {
+            transition: transform 0.3s ease;
+        }
+    
+        /* Post Content Styles */
+        .post-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
+            padding: 10px;
+            transition: transform 0.3s ease;
+            transform: translateY(100%);
+            z-index: 10; /* Ensures content appears on top of the image */
+        }
+    
+        /* Hover Effect Styles */
+        .property-grid-2:hover .thumbnail-img {
+            transform: scale(1.1); /* Increase image size on hover */
+        }
+    
+        .property-grid-2:hover .post-content {
+            transform: translateY(0); /* Slide content into view on hover */
+        }
+    </style>
+    
+    
+    
+</head>
+
+<body>
+
+    <div class="preloader">
+		<div class="loader xy-center"></div>
+	</div>
+
+    <div id="page_wrapper" class="bg-light">
+        <!--============== Header Section Start ==============-->
+        <header class="header-style nav-on-top bg-white">
+            <div class="main-nav">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <nav class="navbar navbar-expand-lg nav-secondary nav-primary-hover nav-line-active">
+                                <a class="navbar-brand" href="#"><img class="nav-logo" src="assets/images/logo/logo1.png" alt="Image not found !"></a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon flaticon-menu flat-small text-primary"></span>
+                                  </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav ms-auto">
+                                        <!-- <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#">Home</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="index.html">Home 01</a></li>
+                                                <li><a class="dropdown-item" href="index-2.html">Home 02</a></li>
+                                                <li><a class="dropdown-item" href="index-3.html">Home 03</a></li>
+                                                <li><a class="dropdown-item" href="index-4.html">Home 04</a></li>
+                                                <li><a class="dropdown-item" href="index-5.html">Home 05</a></li>
+                                                <li><a class="dropdown-item" href="index-6.html">Home 06</a></li>
+                                                <li><a class="dropdown-item" href="index-7.html">Home 07</a></li>
+                                                <li><a class="dropdown-item" href="index-8.html">Home 08</a></li>
+                                                <li><a class="dropdown-item" href="index-9.html">Home 09</a></li>
+                                                <li><a class="dropdown-item" href="index-10.html">Home 10</a></li>
+                                                <li><a class="dropdown-item" href="index-11.html">Home 11</a></li>
+                                                <li><a class="dropdown-item" href="index-12.html">Home 12</a></li>
+                                                <li><a class="dropdown-item" href="index-13.html">Home 13 <span class="text-primary ps-3 font-mini">New</span></a></li>
+                                                <li><a class="dropdown-item" href="index-14.html">Home 14 <span class="text-primary ps-3 font-mini">New</span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#">Listing</a>
+                                            <ul class="dropdown-menu">
+                                                <li class="dropdown"> <a class="dropdown-toggle dropdown-item" href="property-grid-v1.html">Property Grid</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="property-grid-v1.html">Grid View V1</a></li>
+                                                        <li><a class="dropdown-item" href="property-grid-v2.html">Grid View V2</a></li>
+                                                        <li><a class="dropdown-item" href="property-grid-v3.html">Grid View V3</a></li>
+                                                        <li><a class="dropdown-item" href="property-grid-v4.html">Grid View V4</a></li>
+                                                        <li><a class="dropdown-item" href="property-grid-v5.html">Grid View V5</a></li>
+                                                        <li><a class="dropdown-item" href="property-grid-full.html">Grid Full Width</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown"> <a class="dropdown-toggle dropdown-item" href="property-list-v1.html">Property List</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="property-list-v1.html">List View V1</a></li>
+                                                        <li><a class="dropdown-item" href="property-list-v2.html">List View V2</a></li>
+                                                        <li><a class="dropdown-item" href="property-list-full.html">List Full Width</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown"> <a class="dropdown-toggle dropdown-item" href="#">Listing Variation</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="property-banner-search.html">Banner Search</a></li>
+                                                        <li><a class="dropdown-item" href="property-including-slider.html">Slider Include</a></li>
+                                                        <li><a class="dropdown-item" href="property-including-map.html">Map Include</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown"> <a class="dropdown-toggle dropdown-item" href="property-map-grid-v1.html">Property With Map</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="property-map-grid-v1.html">Map Grid View V1</a></li>
+                                                        <li><a class="dropdown-item" href="property-map-grid-v2.html">Map Grid View V2</a></li>
+                                                        <li><a class="dropdown-item" href="property-map-grid-v3.html">Map Grid View V3</a></li>
+                                                        <li><a class="dropdown-item" href="property-map-grid-v4.html">Map Grid View V4</a></li>
+                                                        <li><a class="dropdown-item" href="property-map-list-v1.html">Map List View V1</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown"> <a class="dropdown-toggle dropdown-item" href="advance-search-v1.html">Advance Search</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="advance-search-v1.html">Advance Search V1</a></li>
+                                                        <li><a class="dropdown-item" href="advance-search-v2.html">Advance Search V2</a></li>
+                                                        <li><a class="dropdown-item" href="advance-search-v3.html">Advance Search V3</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#">Features</a>
+                                            <ul class="dropdown-menu">
+                                                <li class="dropdown"> <a class="dropdown-toggle dropdown-item" href="product-details.html">Single Property</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="product-details.html">Single Property V1</a></li>
+                                                        <li><a class="dropdown-item" href="property-single-v2.html">Single Property V2</a></li>
+                                                        <li><a class="dropdown-item" href="property-single-v3.html">Single Property V3</a></li>
+                                                        <li><a class="dropdown-item" href="property-single-v4.html">Single Property V4</a></li>
+                                                        <li><a class="dropdown-item" href="property-single-v5.html">Single Property V5</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown"> <a class="dropdown-toggle dropdown-item" href="left-filter-property-v1.html">Left Filter Search</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="left-filter-property-v1.html">Filter Property V1</a></li>
+                                                        <li><a class="dropdown-item" href="left-filter-property-v2.html">Filter Property V2</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown"> <a class="dropdown-toggle dropdown-item" href="dashboard.html">Dashboard</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="dashboard.html">My Account</a></li>
+                                                        <li><a class="dropdown-item" href="dashboard-profile.html">My Profile</a></li>
+                                                        <li><a class="dropdown-item" href="dashboard-profile.html">Social Media</a></li>
+                                                        <li><a class="dropdown-item" href="dashboard-listing.html">My Properties</a></li>
+                                                        <li><a class="dropdown-item" href="dashboard-favorite.html">Favorited Properties</a></li>
+                                                        <li><a class="dropdown-item" href="dashboard-submit-property.html">Submit New Property</a></li>
+                                                        <li><a class="dropdown-item" href="dashboard-message.html">Message</a></li>
+                                                        <li><a class="dropdown-item" href="dashboard-agency-profile.html">Agency Profile</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown">
+                                                    <a class="dropdown-toggle dropdown-item" href="agent-grid-view.html">Agents</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="agent-grid-view.html">Agents Grid View</a></li>
+                                                        <li><a class="dropdown-item" href="agent-list-view.html">Agents List View</a></li>
+                                                        <li><a class="dropdown-item" href="agent-details.html">Agents Details</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown">
+                                                    <a class="dropdown-toggle dropdown-item" href="photo-gallery-v1.html">Photo Gallery</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="photo-gallery-v1.html">Photo Gallery V1</a></li>
+                                                        <li><a class="dropdown-item" href="photo-gallery-v2.html">Photo Gallery V2</a></li>
+                                                        <li><a class="dropdown-item" href="photo-gallery-v3.html">Photo Gallery V3</a></li>
+                                                        <li><a class="dropdown-item" href="photo-gallery-v4.html">Photo Gallery V4</a></li>
+                                                        <li><a class="dropdown-item" href="photo-gallery-v5.html">Photo Gallery V5</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a class="dropdown-item" href="compare.html">Compare</a></li>
+                                                <li><a class="dropdown-item" href="dashboard-submit-property.html">Submit Property</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown mega-dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#">Pages</a>
+                                            <ul class="dropdown-menu mega-dropdown-menu">
+                                                <li class="mega-container">
+                                                    <div class="row row-cols-lg-4 row-cols-1">
+                                                        <div class="col">
+                                                            <ul>
+                                                                <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                                                                <li><a class="dropdown-item" href="our-mission.html">Our Mission</a></li>
+                                                                <li><a class="dropdown-item" href="career.html">Careers</a></li>
+                                                                <li><a class="dropdown-item" href="award.html">Awards</a></li>
+                                                                <li><a class="dropdown-item" href="testimonials.html">Testimonials</a></li>
+                                                                <li><a class="dropdown-item" href="timeline.html">Timeline</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col">
+                                                            <ul>
+                                                                <li><a class="dropdown-item" href="dashboard-profile.html">My Profile</a></li>
+                                                                <li><a class="dropdown-item" href="dashboard-profile.html">Social Media</a></li>
+                                                                <li><a class="dropdown-item" href="dashboard-listing.html">My Properties</a></li>
+                                                                <li><a class="dropdown-item" href="dashboard-favorite.html">Favorited Properties</a></li>
+                                                                <li><a class="dropdown-item" href="dashboard-submit-property.html">Submit New Property</a></li>
+                                                                <li><a class="dropdown-item" href="#">Shortcodes</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col">
+                                                            <ul>
+                                                                <li><a class="dropdown-item" href="#">Feedback and Comments</a></li>
+                                                                <li><a class="dropdown-item" href="#">Payments and Invoice</a></li>
+                                                                <li><a class="dropdown-item" href="dashboard-change-password.html">Change Password</a></li>
+                                                                <li><a class="dropdown-item" href="terms-and-condition.html">Terms And Condition</a></li>
+                                                                <li><a class="dropdown-item" href="pricing-table.html">Pricing Table</a></li>
+                                                                <li><a class="dropdown-item" href="dashboard-agency-profile.html">Agency Profile</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col">
+                                                            <ul>
+                                                                <li><a class="dropdown-item" href="our-services.html">Our Services</a></li>
+                                                                <li><a class="dropdown-item" href="dashboard-submit-property.html">Submit Property</a></li>
+                                                                <li><a class="dropdown-item" href="#">Invoice Details</a></li>
+                                                                <li><a class="dropdown-item" href="dashboard-message.html">Message</a></li>
+                                                                <li><a class="dropdown-item" href="404.html">Error Page</a></li>
+                                                                <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#">Blog</a>
+                                            <ul class="dropdown-menu">
+                                                <li class="dropdown"> <a class="dropdown-toggle dropdown-item" href="#">Blog Grid</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="blog-grid-v1.html">Blog Grid V1</a></li>
+                                                        <li><a class="dropdown-item" href="blog-grid-v2.html">Blog Grid V2</a></li>
+                                                        <li><a class="dropdown-item" href="blog-grid-v3.html">Blog Grid V3</a></li>
+                                                        <li><a class="dropdown-item" href="blog-grid-v4.html">Blog Grid V4</a></li>
+                                                        <li><a class="dropdown-item" href="blog-grid-v5.html">Blog Grid V5</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown"> <a class="dropdown-toggle dropdown-item" href="#">Blog List</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="blog-list-v1.html">Blog List V1</a></li>
+                                                        <li><a class="dropdown-item" href="blog-list-v2.html">Blog List V2</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a class="dropdown-item" href="blog-masonry-grid.html">Masonry Grid</a></li>
+                                                <li class="dropdown"> <a class="dropdown-toggle dropdown-item" href="#">Single Blog</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="blog-single-v1.html">Blog Single V1</a></li>
+                                                        <li><a class="dropdown-item" href="blog-single-v2.html">Blog Single V2</a></li>
+                                                        <li><a class="dropdown-item" href="blog-single-v3.html">Blog Single V3</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li> -->
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="index.html">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="product.html">Product</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="career.html">Career</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="contact.html">Contact</a>
+                                        </li>
+                                    </ul>
+                                    <!-- <ul class="navbar-nav user-button sm-mx-none ps-3">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="signin.html"><i class="fas fa-user me-1"></i> Login/Register</a>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="btn btn-primary md-mx-none">+ Create Listing</a> -->
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--============== Header Section End ==============-->
+
+        <div class="page-banner-simple bg-secondary py-100" style="background-image: url(assets/images/background/bg-1.png); background-repeat: no-repeat; background-position: center center; background-size: cover;">
+            <div class="container">
+                <div class="row g-4 h-100">
+                    <div class="col-md-6">
+                        <!-- <h3 class="banner-title text-white">Product</h3> -->
+                        <h2 class="main-title down-line text-white mb-5">Our Products</h2>
+                        <!-- <span class="banner-tagline font-medium text-white">Whether buying or renting, finding the right place.</span> -->
+                    </div>
+                    <div class="col-md-6">
+                        <nav aria-label="breadcrumb" class="d-flex justify-content-md-end align-items-center text-white h-100">
+                            <ol class="breadcrumb mb-0 bg-transparent p-0">
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item text-primary" aria-current="page">Product</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="full-row pt-5 bg-light">
+            <div class="container">
+                <!-- <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <h2 class="main-title down-line mb-5">Our Products</h2>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#" class="mb-3 btn-link text-secondary hover-text-primary transition float-md-end d-table">More Properties &gt;</a>
+                    </div>
+                </div> -->
+                <div class="row">
+                    <!-- Left Column for Filters -->
+                    <div class="col-md-2 col-sm-12 mb-4">
+                        <div class="mix-tab">
+                            <ul class="nav-tab-border-active d-flex flex-column">
+                                <li data-filter="all">All</li>
+                                <li data-filter=".appartment">Apartment
+                                    <ul class="subcategories">
+                                        <li data-filter=".appartment-studio">Studio</li>
+                                        <li data-filter=".appartment-penthouse">Penthouse</li>
+                                    </ul>
+                                </li>
+                                <li data-filter=".house">House
+                                    <ul class="subcategories">
+                                        <li data-filter=".house-villa">Villa</li>
+                                        <li data-filter=".house-flat">Flat</li>
+                                    </ul>
+                                </li>
+                                <li data-filter=".office">Office
+                                    <ul class="subcategories">
+                                        <li data-filter=".office-shared">Shared</li>
+                                        <li data-filter=".office-private">Private</li>
+                                    </ul>
+                                </li>
+                                <li data-filter=".land">Land
+                                    <ul class="subcategories">
+                                        <li data-filter=".land-residential">Residential</li>
+                                        <li data-filter=".land-commercial">Commercial</li>
+                                    </ul>
+                                </li>
+                                <li data-filter=".featured">Featured</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Right Column for Property Elements -->
+                    <div class="col-md-10 col-sm-12">
+                        <div class="mix-element row row-cols-lg-3 row-cols-md-3 row-cols-1 mt-0 g-4">   
+                            <!-- Property Grid Items -->
+                            <div class="col mix appartment featured">
+                                <!-- Property Grid -->
+                                <div class="property-grid-2 property-block transation">
+                                    <div class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom">
+                                        <!-- <div class="cata position-absolute">
+                                            <span class="sale bg-secondary text-white">For Rent</span>
+                                            <span class="featured bg-primary text-white">Featured</span>
+                                        </div> -->
+                                        <a href="product-details.html" class="d-block"><img src="assets/images/property_grid/property-grid-6.png" alt="Image Not Found!"></a>
+                                    </div>
+                                    <div class="post-content py-3">
+                                        <div class="post-meta font-small text-uppercase list-color-primary">
+                                            <a href="#" class="listing-ctg"><i class="fa-solid fa-building"></i><span>Condos</span></a>
+                                        </div>
+                                        <h5 class="listing-title"><a href="product-details.html">New Developed Condos</a></h5>
+                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 2305 Tree Frog Lane Overlandpk</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mix house land land-residential featured">
+                                <!-- Property Grid -->
+                                <div class="property-grid-2 property-block transation">
+                                    <div class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom">
+                                        <!-- <div class="cata position-absolute">
+                                            <span class="sale bg-secondary text-white">For Sale</span>
+                                        </div> -->
+                                        <a href="product-details.html" class="d-block"><img src="assets/images/property_grid/property-grid-1.png" alt="Image Not Found!"></a>
+                                    </div>
+                                    <div class="post-content py-3">
+                                        <div class="post-meta font-small text-uppercase list-color-primary">
+                                            <a href="#" class="listing-ctg"><i class="fa-solid fa-building"></i><span>Apartment</span></a>
+                                        </div>
+                                        <h5 class="listing-title"><a href="product-details.html">Family House Residense</a></h5>
+                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 2305 Tree Frog Lane Overlandpk</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mix office office-shared">
+                                <!-- Property Grid -->
+                                <div class="property-grid-2 property-block transation">
+                                    <div class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom">
+                                        <!-- <div class="cata position-absolute">
+                                            <span class="sale bg-secondary text-white">For Rent</span>
+                                            <span class="featured bg-primary text-white">Featured</span>
+                                        </div> -->
+                                        <a href="product-details.html" class="d-block"><img src="assets/images/property_grid/property-grid-2.png" alt="Image Not Found!"></a>
+                                    </div>
+                                    <div class="post-content py-3">
+                                        <div class="post-meta font-small text-uppercase list-color-primary">
+                                            <a href="#" class="listing-ctg"><i class="fa-solid fa-building"></i><span>Villa</span></a>
+                                        </div>
+                                        <h5 class="listing-title"><a href="product-details.html">Gorgeous Villa Bay View</a></h5>
+                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 2305 Tree Frog Lane Overlandpk</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mix appartment appartment-studio featured">
+                                <!-- Property Grid -->
+                                <div class="property-grid-2 property-block transation">
+                                    <div class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom">
+                                        <!-- <div class="cata position-absolute">
+                                            <span class="sale bg-secondary text-white">For Rent</span>
+                                            <span class="featured bg-primary text-white">Featured</span>
+                                        </div> -->
+                                        <a href="product-details.html" class="d-block"><img src="assets/images/property_grid/property-grid-3.png" alt="Image Not Found!"></a>
+                                    </div>
+                                    <div class="post-content py-3">
+                                        <div class="post-meta font-small text-uppercase list-color-primary">
+                                            <a href="#" class="listing-ctg"><i class="fa-solid fa-building"></i><span>Condos</span></a>
+                                        </div>
+                                        <h5 class="listing-title"><a href="product-details.html">New Developed Condos</a></h5>
+                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 2305 Tree Frog Lane Overlandpk</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mix appartment  appartment-penthouse land land-commercial">
+                                <!-- Property Grid -->
+                                <div class="property-grid-2 property-block transation">
+                                    <div class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom">
+                                        <!-- <div class="cata position-absolute">
+                                            <span class="sale bg-secondary text-white">For Rent</span>
+                                            <span class="featured bg-primary text-white">Featured</span>
+                                        </div> -->
+                                        <a href="product-details.html" class="d-block"><img src="assets/images/property_grid/property-grid-3.png" alt="Image Not Found!"></a>
+                                    </div>
+                                    <div class="post-content py-3">
+                                        <div class="post-meta font-small text-uppercase list-color-primary">
+                                            <a href="#" class="listing-ctg"><i class="fa-solid fa-building"></i><span>Condos</span></a>
+                                        </div>
+                                        <h5 class="listing-title"><a href="product-details.html">New Developed Condos</a></h5>
+                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 2305 Tree Frog Lane Overlandpk</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mix house house-villa featured">
+                                <!-- Property Grid -->
+                                <div class="property-grid-2 property-block transation">
+                                    <div class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom">
+                                        <!-- <div class="cata position-absolute">
+                                            <span class="sale bg-secondary text-white">For Rent</span>
+                                            <span class="featured bg-primary text-white">Featured</span>
+                                        </div> -->
+                                        <a href="product-details.html" class="d-block"><img src="assets/images/property_grid/property-grid-4.png" alt="Image Not Found!"></a>
+                                    </div>
+                                    <div class="post-content py-3">
+                                        <div class="post-meta font-small text-uppercase list-color-primary">
+                                            <a href="#" class="listing-ctg"><i class="fa-solid fa-building"></i><span>Apartment</span></a>
+                                        </div>
+                                        <h5 class="listing-title"><a href="product-details.html">Apolo Family House</a></h5>
+                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 2305 Tree Frog Lane Overlandpk</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mix house house-flat land">
+                                <!-- Property Grid -->
+                                <div class="property-grid-2 property-block transation">
+                                    <div class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom">
+                                        <!-- <div class="cata position-absolute">
+                                            <span class="sale bg-secondary text-white">For Rent</span>
+                                            <span class="featured bg-primary text-white">Featured</span>
+                                        </div> -->
+                                        <a href="product-details.html" class="d-block"><img src="assets/images/property_grid/property-grid-5.png" alt="Image Not Found!"></a>
+                                    </div>
+                                    <div class="post-content py-3">
+                                        <div class="post-meta font-small text-uppercase list-color-primary">
+                                            <a href="#" class="listing-ctg"><i class="fa-solid fa-building"></i><span>Condo</span></a>
+                                        </div>
+                                        <h5 class="listing-title"><a href="product-details.html">Condos Infront of River</a></h5>
+                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 2305 Tree Frog Lane Overlandpk</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mix appartment featured">
+                                <!-- Property Grid -->
+                                <div class="property-grid-2 property-block transation">
+                                    <div class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom">
+                                        <!-- <div class="cata position-absolute">
+                                            <span class="sale bg-secondary text-white">For Rent</span>
+                                            <span class="featured bg-primary text-white">Featured</span>
+                                        </div> -->
+                                        <a href="product-details.html" class="d-block"><img src="assets/images/property_grid/property-grid-6.png" alt="Image Not Found!"></a>
+                                    </div>
+                                    <div class="post-content py-3">
+                                        <div class="post-meta font-small text-uppercase list-color-primary">
+                                            <a href="#" class="listing-ctg"><i class="fa-solid fa-building"></i><span>Condos</span></a>
+                                        </div>
+                                        <h5 class="listing-title"><a href="product-details.html">New Developed Condos</a></h5>
+                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 2305 Tree Frog Lane Overlandpk</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--============== Footer Section Start ==============-->
+        <footer class="full-row footer-default-dark bg-footer" style="padding-bottom: 30px">
+            <div class="container">
+                <div class="row row-cols-lg-4 row-cols-md-2 row-cols-1">
+                    <div class="col">
+                        <div class="footer-widget mb-4">
+                            <div class="footer-logo mb-4">
+                                <a href="#"><img src="assets/images/logo/logo-full-white.png" alt="Image not found!" /></a>
+                            </div>
+                            <p>Risus commodo congue augue phas ellus morbi hymenaeos ante tincidu eu orci dictum bibe ndum lacus pla tea primis mi lacinia</p>
+                        </div>
+                        <!-- <div class="footer-widget media-widget mb-4">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        </div> -->
+                    </div>
+                    <div class="col">
+                        <div class="footer-widget footer-nav mb-4">
+                            <h3 class="widget-title mb-4">Quick Links</h3>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Products</a></li>
+                                <li><a href="#">Brands</a></li>
+                                <li><a href="#">Contact us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="footer-widget contact-widget mb-4">
+                            <h3 class="widget-title mb-4">Contact Info</h3>
+                            <ul>
+                                <li>Unicoder Design Agency 301 The Greenhouse, Custard Factory, London, E3 8DY.</li>
+                                <li>+91 9999900000</li>
+                                <li>helpline@coscine.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="footer-widget newslatter-widget mb-4">
+                            <h4 class="widget-title mb-4">Social networks</h4>
+                            <div class="footer-widget media-widget mb-4">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--============== Footer Section End ==============-->
+
+        <!--============== Copyright Section Start ==============-->
+        <div class="copyright bg-footer text-default py-4">
+            <div class="container">
+                <div class="row row-cols-md-2 row-cols-1">
+                    <div class="col">
+                        <span class="text-white">© <span id="current-year"></span> Oscine All rights reserved</span>
+                    </div>
+                    <div class="col">
+                        <ul class="line-menu float-end list-color-gray">
+                            <li><a href="#">Privacy & Policy </a></li>
+                            <li>|</li>
+                            <li><a href="#">Site Map</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--============== Copyright Section End ==============-->
+
+        <!-- Scroll to top -->
+        <div class="scroll-top-vertical xs-mx-none" id="scroll">Go Top <i class="ms-2 fa-solid fa-arrow-right-long"></i></div>
+        <!-- End Scroll To top -->
+    </div>
+
+    <!-- Javascript Files -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-select.min.js"></script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/range/tmpl.js"></script>
+    <script src="assets/js/range/jquery.dependClass.js"></script>
+    <script src="assets/js/range/draggable.js"></script>
+    <script src="assets/js/range/jquery.slider.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/mixitup.min.js"></script>
+    <script src="assets/js/paraxify.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterItems = document.querySelectorAll('.nav-tab-border-active > li');      
+            // Handle subcategory clicks
+            const subcategoryItems = document.querySelectorAll('.subcategories li');
+            subcategoryItems.forEach(subcategory => {
+                subcategory.addEventListener('click', function(event) {
+                    event.stopPropagation(); // Prevent the parent item from triggering
+                    const filter = this.getAttribute('data-filter');
+                    filterGridItems(filter);
+                });
+            });
+
+            const items = document.querySelectorAll('.nav-tab-border-active > li');
+
+            items.forEach(item => {
+                item.addEventListener('click', function () {
+                    // Remove 'active' class from all items
+                    items.forEach(i => {
+                        if (i !== item) {
+                            i.classList.remove('active');
+                        }
+                    });
+
+                    // Toggle 'active' class on the clicked item
+                    item.classList.toggle('active');
+                });
+            });
+        });
+        
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    </script>
+</body>
+</html>
