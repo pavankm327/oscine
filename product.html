@@ -88,8 +88,8 @@
         }
     
         .nav-tab-border-active > li.active > .subcategories {
-            max-height: 500px; /* Ensure this is enough to fit the content */
-            padding-top: 15px; /* Adjust as needed */
+            max-height: 500px;
+            padding-top: 15px;
             transform: scaleY(1);
         }
     
@@ -113,7 +113,7 @@
             bottom: 0;
             width: 0;
             height: 2px;
-            background-color: #007bff; /* Underline color */
+            background-color: #007bff;
             transition: width 0.3s ease;
         }
     
@@ -126,43 +126,67 @@
         }
     </style>
     <style>
-        /* Container Styles */
         .property-grid-2 {
             position: relative;
             overflow: hidden;
             transition: all 0.3s ease;
         }
     
-        /* Image Styles */
         .thumbnail-img {
             transition: transform 0.3s ease;
         }
     
-        /* Post Content Styles */
         .post-content {
             position: absolute;
             bottom: 0;
             left: 0;
             right: 0;
-            background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
-            padding: 10px;
+            background: rgba(5, 5, 5, 0.543); 
+            padding-left: 15px;
+            padding-top: 10px !important;
             transition: transform 0.3s ease;
-            transform: translateY(100%);
-            z-index: 10; /* Ensures content appears on top of the image */
+            transform: translateY(63%);
+            z-index: 10; 
         }
     
         /* Hover Effect Styles */
         .property-grid-2:hover .thumbnail-img {
-            transform: scale(1.1); /* Increase image size on hover */
+            transform: scale(1.1); 
         }
     
         .property-grid-2:hover .post-content {
-            transform: translateY(0); /* Slide content into view on hover */
+            transform: translateY(0);
+            background: rgba(255, 255, 255, 0.8); 
         }
-    </style>
-    
-    
-    
+        @media (min-width: 768px) and (max-width: 991.99px) {
+            .post-content {
+                transform: translateY(70%);
+                padding: 8px!important;
+                padding-top: 2px!important;
+            }
+
+            .listing-ctg {
+                font-size: 0.7rem!important;
+            }
+
+            .listing-title a {
+                font-size: 0.7rem!important;
+            }
+
+            .listing-location {
+                font-size: 0.7rem!important;
+            }
+
+            .property-grid-2:hover .thumbnail-img {
+                transform: scale(1.0);
+            }
+
+            .property-grid-2:hover .post-content {
+                transform: translateY(10%); 
+                background: rgba(255, 255, 255, 0.8);
+            }
+        }
+    </style>   
 </head>
 
 <body>
@@ -185,218 +209,20 @@
                                   </button>
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul class="navbar-nav ms-auto">
-                                        <!-- <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#">Home</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="index.html">Home 01</a></li>
-                                                <li><a class="dropdown-item" href="index-2.html">Home 02</a></li>
-                                                <li><a class="dropdown-item" href="index-3.html">Home 03</a></li>
-                                                <li><a class="dropdown-item" href="index-4.html">Home 04</a></li>
-                                                <li><a class="dropdown-item" href="index-5.html">Home 05</a></li>
-                                                <li><a class="dropdown-item" href="index-6.html">Home 06</a></li>
-                                                <li><a class="dropdown-item" href="index-7.html">Home 07</a></li>
-                                                <li><a class="dropdown-item" href="index-8.html">Home 08</a></li>
-                                                <li><a class="dropdown-item" href="index-9.html">Home 09</a></li>
-                                                <li><a class="dropdown-item" href="index-10.html">Home 10</a></li>
-                                                <li><a class="dropdown-item" href="index-11.html">Home 11</a></li>
-                                                <li><a class="dropdown-item" href="index-12.html">Home 12</a></li>
-                                                <li><a class="dropdown-item" href="index-13.html">Home 13 <span class="text-primary ps-3 font-mini">New</span></a></li>
-                                                <li><a class="dropdown-item" href="index-14.html">Home 14 <span class="text-primary ps-3 font-mini">New</span></a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#">Listing</a>
-                                            <ul class="dropdown-menu">
-                                                <li class="dropdown"> <a class="dropdown-toggle dropdown-item" href="property-grid-v1.html">Property Grid</a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a class="dropdown-item" href="property-grid-v1.html">Grid View V1</a></li>
-                                                        <li><a class="dropdown-item" href="property-grid-v2.html">Grid View V2</a></li>
-                                                        <li><a class="dropdown-item" href="property-grid-v3.html">Grid View V3</a></li>
-                                                        <li><a class="dropdown-item" href="property-grid-v4.html">Grid View V4</a></li>
-                                                        <li><a class="dropdown-item" href="property-grid-v5.html">Grid View V5</a></li>
-                                                        <li><a class="dropdown-item" href="property-grid-full.html">Grid Full Width</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown"> <a class="dropdown-toggle dropdown-item" href="property-list-v1.html">Property List</a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a class="dropdown-item" href="property-list-v1.html">List View V1</a></li>
-                                                        <li><a class="dropdown-item" href="property-list-v2.html">List View V2</a></li>
-                                                        <li><a class="dropdown-item" href="property-list-full.html">List Full Width</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown"> <a class="dropdown-toggle dropdown-item" href="#">Listing Variation</a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a class="dropdown-item" href="property-banner-search.html">Banner Search</a></li>
-                                                        <li><a class="dropdown-item" href="property-including-slider.html">Slider Include</a></li>
-                                                        <li><a class="dropdown-item" href="property-including-map.html">Map Include</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown"> <a class="dropdown-toggle dropdown-item" href="property-map-grid-v1.html">Property With Map</a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a class="dropdown-item" href="property-map-grid-v1.html">Map Grid View V1</a></li>
-                                                        <li><a class="dropdown-item" href="property-map-grid-v2.html">Map Grid View V2</a></li>
-                                                        <li><a class="dropdown-item" href="property-map-grid-v3.html">Map Grid View V3</a></li>
-                                                        <li><a class="dropdown-item" href="property-map-grid-v4.html">Map Grid View V4</a></li>
-                                                        <li><a class="dropdown-item" href="property-map-list-v1.html">Map List View V1</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown"> <a class="dropdown-toggle dropdown-item" href="advance-search-v1.html">Advance Search</a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a class="dropdown-item" href="advance-search-v1.html">Advance Search V1</a></li>
-                                                        <li><a class="dropdown-item" href="advance-search-v2.html">Advance Search V2</a></li>
-                                                        <li><a class="dropdown-item" href="advance-search-v3.html">Advance Search V3</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#">Features</a>
-                                            <ul class="dropdown-menu">
-                                                <li class="dropdown"> <a class="dropdown-toggle dropdown-item" href="product-details.html">Single Property</a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a class="dropdown-item" href="product-details.html">Single Property V1</a></li>
-                                                        <li><a class="dropdown-item" href="property-single-v2.html">Single Property V2</a></li>
-                                                        <li><a class="dropdown-item" href="property-single-v3.html">Single Property V3</a></li>
-                                                        <li><a class="dropdown-item" href="property-single-v4.html">Single Property V4</a></li>
-                                                        <li><a class="dropdown-item" href="property-single-v5.html">Single Property V5</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown"> <a class="dropdown-toggle dropdown-item" href="left-filter-property-v1.html">Left Filter Search</a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a class="dropdown-item" href="left-filter-property-v1.html">Filter Property V1</a></li>
-                                                        <li><a class="dropdown-item" href="left-filter-property-v2.html">Filter Property V2</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown"> <a class="dropdown-toggle dropdown-item" href="dashboard.html">Dashboard</a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a class="dropdown-item" href="dashboard.html">My Account</a></li>
-                                                        <li><a class="dropdown-item" href="dashboard-profile.html">My Profile</a></li>
-                                                        <li><a class="dropdown-item" href="dashboard-profile.html">Social Media</a></li>
-                                                        <li><a class="dropdown-item" href="dashboard-listing.html">My Properties</a></li>
-                                                        <li><a class="dropdown-item" href="dashboard-favorite.html">Favorited Properties</a></li>
-                                                        <li><a class="dropdown-item" href="dashboard-submit-property.html">Submit New Property</a></li>
-                                                        <li><a class="dropdown-item" href="dashboard-message.html">Message</a></li>
-                                                        <li><a class="dropdown-item" href="dashboard-agency-profile.html">Agency Profile</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown">
-                                                    <a class="dropdown-toggle dropdown-item" href="agent-grid-view.html">Agents</a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a class="dropdown-item" href="agent-grid-view.html">Agents Grid View</a></li>
-                                                        <li><a class="dropdown-item" href="agent-list-view.html">Agents List View</a></li>
-                                                        <li><a class="dropdown-item" href="agent-details.html">Agents Details</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown">
-                                                    <a class="dropdown-toggle dropdown-item" href="photo-gallery-v1.html">Photo Gallery</a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a class="dropdown-item" href="photo-gallery-v1.html">Photo Gallery V1</a></li>
-                                                        <li><a class="dropdown-item" href="photo-gallery-v2.html">Photo Gallery V2</a></li>
-                                                        <li><a class="dropdown-item" href="photo-gallery-v3.html">Photo Gallery V3</a></li>
-                                                        <li><a class="dropdown-item" href="photo-gallery-v4.html">Photo Gallery V4</a></li>
-                                                        <li><a class="dropdown-item" href="photo-gallery-v5.html">Photo Gallery V5</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a class="dropdown-item" href="compare.html">Compare</a></li>
-                                                <li><a class="dropdown-item" href="dashboard-submit-property.html">Submit Property</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="nav-item dropdown mega-dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#">Pages</a>
-                                            <ul class="dropdown-menu mega-dropdown-menu">
-                                                <li class="mega-container">
-                                                    <div class="row row-cols-lg-4 row-cols-1">
-                                                        <div class="col">
-                                                            <ul>
-                                                                <li><a class="dropdown-item" href="about.html">About Us</a></li>
-                                                                <li><a class="dropdown-item" href="our-mission.html">Our Mission</a></li>
-                                                                <li><a class="dropdown-item" href="career.html">Careers</a></li>
-                                                                <li><a class="dropdown-item" href="award.html">Awards</a></li>
-                                                                <li><a class="dropdown-item" href="testimonials.html">Testimonials</a></li>
-                                                                <li><a class="dropdown-item" href="timeline.html">Timeline</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col">
-                                                            <ul>
-                                                                <li><a class="dropdown-item" href="dashboard-profile.html">My Profile</a></li>
-                                                                <li><a class="dropdown-item" href="dashboard-profile.html">Social Media</a></li>
-                                                                <li><a class="dropdown-item" href="dashboard-listing.html">My Properties</a></li>
-                                                                <li><a class="dropdown-item" href="dashboard-favorite.html">Favorited Properties</a></li>
-                                                                <li><a class="dropdown-item" href="dashboard-submit-property.html">Submit New Property</a></li>
-                                                                <li><a class="dropdown-item" href="#">Shortcodes</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col">
-                                                            <ul>
-                                                                <li><a class="dropdown-item" href="#">Feedback and Comments</a></li>
-                                                                <li><a class="dropdown-item" href="#">Payments and Invoice</a></li>
-                                                                <li><a class="dropdown-item" href="dashboard-change-password.html">Change Password</a></li>
-                                                                <li><a class="dropdown-item" href="terms-and-condition.html">Terms And Condition</a></li>
-                                                                <li><a class="dropdown-item" href="pricing-table.html">Pricing Table</a></li>
-                                                                <li><a class="dropdown-item" href="dashboard-agency-profile.html">Agency Profile</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col">
-                                                            <ul>
-                                                                <li><a class="dropdown-item" href="our-services.html">Our Services</a></li>
-                                                                <li><a class="dropdown-item" href="dashboard-submit-property.html">Submit Property</a></li>
-                                                                <li><a class="dropdown-item" href="#">Invoice Details</a></li>
-                                                                <li><a class="dropdown-item" href="dashboard-message.html">Message</a></li>
-                                                                <li><a class="dropdown-item" href="404.html">Error Page</a></li>
-                                                                <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#">Blog</a>
-                                            <ul class="dropdown-menu">
-                                                <li class="dropdown"> <a class="dropdown-toggle dropdown-item" href="#">Blog Grid</a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a class="dropdown-item" href="blog-grid-v1.html">Blog Grid V1</a></li>
-                                                        <li><a class="dropdown-item" href="blog-grid-v2.html">Blog Grid V2</a></li>
-                                                        <li><a class="dropdown-item" href="blog-grid-v3.html">Blog Grid V3</a></li>
-                                                        <li><a class="dropdown-item" href="blog-grid-v4.html">Blog Grid V4</a></li>
-                                                        <li><a class="dropdown-item" href="blog-grid-v5.html">Blog Grid V5</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown"> <a class="dropdown-toggle dropdown-item" href="#">Blog List</a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a class="dropdown-item" href="blog-list-v1.html">Blog List V1</a></li>
-                                                        <li><a class="dropdown-item" href="blog-list-v2.html">Blog List V2</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a class="dropdown-item" href="blog-masonry-grid.html">Masonry Grid</a></li>
-                                                <li class="dropdown"> <a class="dropdown-toggle dropdown-item" href="#">Single Blog</a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a class="dropdown-item" href="blog-single-v1.html">Blog Single V1</a></li>
-                                                        <li><a class="dropdown-item" href="blog-single-v2.html">Blog Single V2</a></li>
-                                                        <li><a class="dropdown-item" href="blog-single-v3.html">Blog Single V3</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li> -->
                                         <li class="nav-item">
                                             <a class="nav-link" href="index.html">Home</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="product.html">Product</a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="career.html">Career</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="contact.html">Contact</a>
-                                        </li>
-                                    </ul>
-                                    <!-- <ul class="navbar-nav user-button sm-mx-none ps-3">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="signin.html"><i class="fas fa-user me-1"></i> Login/Register</a>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#">Contact</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+                                                <li><a class="dropdown-item" href="career.html">Careers</a></li>
+                                            </ul>
                                         </li>
                                     </ul>
-                                    <a href="#" class="btn btn-primary md-mx-none">+ Create Listing</a> -->
                                 </div>
                             </nav>
                         </div>
@@ -485,11 +311,11 @@
                                         <a href="product-details.html" class="d-block"><img src="assets/images/property_grid/property-grid-6.png" alt="Image Not Found!"></a>
                                     </div>
                                     <div class="post-content py-3">
-                                        <div class="post-meta font-small text-uppercase list-color-primary">
+                                        <div class="post-meta font-small text-uppercase list-color-primary fw-strong">
                                             <a href="#" class="listing-ctg"><i class="fa-solid fa-building"></i><span>Condos</span></a>
                                         </div>
                                         <h5 class="listing-title"><a href="product-details.html">New Developed Condos</a></h5>
-                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 2305 Tree Frog Lane Overlandpk</span>
+                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 2305 Tree Frog Lane</span>
                                     </div>
                                 </div>
                             </div>
@@ -507,7 +333,7 @@
                                             <a href="#" class="listing-ctg"><i class="fa-solid fa-building"></i><span>Apartment</span></a>
                                         </div>
                                         <h5 class="listing-title"><a href="product-details.html">Family House Residense</a></h5>
-                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 2305 Tree Frog Lane Overlandpk</span>
+                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 2305 Tree Frog Lane</span>
                                     </div>
                                 </div>
                             </div>
@@ -526,7 +352,7 @@
                                             <a href="#" class="listing-ctg"><i class="fa-solid fa-building"></i><span>Villa</span></a>
                                         </div>
                                         <h5 class="listing-title"><a href="product-details.html">Gorgeous Villa Bay View</a></h5>
-                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 2305 Tree Frog Lane Overlandpk</span>
+                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 2305 Tree Frog Lane</span>
                                     </div>
                                 </div>
                             </div>
@@ -545,7 +371,7 @@
                                             <a href="#" class="listing-ctg"><i class="fa-solid fa-building"></i><span>Condos</span></a>
                                         </div>
                                         <h5 class="listing-title"><a href="product-details.html">New Developed Condos</a></h5>
-                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 2305 Tree Frog Lane Overlandpk</span>
+                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 2305 Tree Frog Lane</span>
                                     </div>
                                 </div>
                             </div>
@@ -564,7 +390,7 @@
                                             <a href="#" class="listing-ctg"><i class="fa-solid fa-building"></i><span>Condos</span></a>
                                         </div>
                                         <h5 class="listing-title"><a href="product-details.html">New Developed Condos</a></h5>
-                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 2305 Tree Frog Lane Overlandpk</span>
+                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 2305 Tree Frog Lane</span>
                                     </div>
                                 </div>
                             </div>
@@ -583,7 +409,7 @@
                                             <a href="#" class="listing-ctg"><i class="fa-solid fa-building"></i><span>Apartment</span></a>
                                         </div>
                                         <h5 class="listing-title"><a href="product-details.html">Apolo Family House</a></h5>
-                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 2305 Tree Frog Lane Overlandpk</span>
+                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 2305 Tree Frog Lane</span>
                                     </div>
                                 </div>
                             </div>
@@ -602,7 +428,7 @@
                                             <a href="#" class="listing-ctg"><i class="fa-solid fa-building"></i><span>Condo</span></a>
                                         </div>
                                         <h5 class="listing-title"><a href="product-details.html">Condos Infront of River</a></h5>
-                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 2305 Tree Frog Lane Overlandpk</span>
+                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 2305 Tree Frog Lane</span>
                                     </div>
                                 </div>
                             </div>
@@ -621,7 +447,7 @@
                                             <a href="#" class="listing-ctg"><i class="fa-solid fa-building"></i><span>Condos</span></a>
                                         </div>
                                         <h5 class="listing-title"><a href="product-details.html">New Developed Condos</a></h5>
-                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 2305 Tree Frog Lane Overlandpk</span>
+                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 2305 Tree Frog Lane</span>
                                     </div>
                                 </div>
                             </div>
@@ -698,8 +524,8 @@
                     <div class="col custom-fade-in">
                         <ul class="line-menu float-end list-color-gray">
                             <li><a href="#">Privacy & Policy </a></li>
-                            <li>|</li>
-                            <li><a href="#">Site Map</a></li>
+                            <!-- <li>|</li>
+                            <li><a href="#">Site Map</a></li> -->
                         </ul>
                     </div>
                 </div>
@@ -707,9 +533,20 @@
         </div>
         <!--============== Copyright Section End ==============-->
 
-        <!-- Scroll to top -->
-        <div class="scroll-top-vertical xs-mx-none" id="scroll">Go Top <i class="ms-2 fa-solid fa-arrow-right-long"></i></div>
-        <!-- End Scroll To top -->
+        <!-- Scroll to top and Chatbot -->
+        <div class="scroll-top-chat-container">
+            <!-- Scroll to Top -->
+            <div class="scroll-top-vertical xs-mx-none" id="scroll">
+                Go Top <i class="ms-2 fa-solid fa-arrow-right-long"></i>
+            </div>
+            <!-- Chatbot Icon -->
+            <div class="chatbot-icon p-10">
+                <span href="#" id="chatbot">
+                    <i class="fa-solid fa-comment-dots"></i>
+                </span>
+            </div>
+        </div>
+        <!-- End Scroll to Top and Chatbot -->
     </div>
 
     <!-- Javascript Files -->

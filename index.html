@@ -41,6 +41,46 @@
                 margin-top: 0!important;
             }
         }
+
+        .owl-nav {
+            position: absolute !important;
+            top: 40% !important;
+            width: 100% !important;
+            display: flex !important;
+            justify-content: space-between !important;
+            transform: translateY(-50%) !important;
+            z-index: 10 !important;
+        }
+
+        .owl-nav .owl-prev,
+        .owl-nav .owl-next {
+            background-color: rgba(0,0,0,0.5) !important;
+            color: #fff !important;
+            border: none !important;
+            border-radius: 50% !important;
+            width: 40px !important;
+            height: 40px !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            font-size: 24px !important;
+            cursor: pointer !important;
+            outline: none !important;
+        }
+
+        .owl-nav .owl-prev {
+            left: 10px !important;
+        }
+
+        .owl-nav .owl-next {
+            right: 10px !important;
+        }
+
+        /* Optional: Hover effects */
+        .owl-nav .owl-prev:hover,
+        .owl-nav .owl-next:hover {
+            background-color: rgba(0,0,0,0.7) !important;
+        }
     </style>
 </head>
 
@@ -281,12 +321,13 @@
                                         <li class="nav-item">
                                             <a class="nav-link" href="product.html">Product</a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="career.html">Career</a>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#">Contact</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+                                                <li><a class="dropdown-item" href="career.html">Careers</a></li>
+                                            </ul>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="contact.html">Contact</a>
-                                        </li> 
                                     </ul>
                                     <!-- <a href="#" class="btn btn-primary add-listing-btn">+ Create Listing</a> -->
                                 </div>
@@ -473,12 +514,22 @@
                                 <li>Innovative Kitchen Appliances</li>
                                 <li>Customizable Home Decor Items</li>
                             </ul>
-                            <ul class="flat-info mb-30 custom-fade-in">
-                                <li><span>3 <img src="assets/images/icon/bed.png" alt="Icon Image"></span><span class="d-block">Bedrooms</span></li>
-                                <li><span>2 <img src="assets/images/icon/bath-tub.png" alt="Icon Image"></span><span class="d-block">Bathrooms</span></li>
-                                <li><span>2 <img src="assets/images/icon/garage.png" alt="Icon Image"></span><span class="d-block">Car parking</span></li>
-                                <!-- <li><span>3450 <img src="assets/images/icon/selection.png" alt="Icon Image"></span><span class="d-block">square Ft</span></li> -->
-                            </ul>
+                            <div class="bb-accordion ac-single-show accordion-plus-left mb-5 custom-fade-in">
+                                <div class="ac-card">
+                                    <a class="ac-toggle text-dark text-truncate" href="#">Read More</a>
+                                    <div class="ac-collapse">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+                                        <ul class="flat-info">
+                                            <li><span>3 <img src="assets/images/icon/bed.png" alt="Icon Image"></span><span class="d-block">Bedrooms</span></li>
+                                            <li><span>2 <img src="assets/images/icon/bath-tub.png" alt="Icon Image"></span><span class="d-block">Bathrooms</span></li>
+                                            <li><span>2 <img src="assets/images/icon/garage.png" alt="Icon Image"></span><span class="d-block">Car parking</span></li>
+                                            <!-- <li><span>3450 <img src="assets/images/icon/selection.png" alt="Icon Image"></span><span class="d-block">square Ft</span></li> -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
                             <div class="row row-cols-md-3 row-cols-1 g-3 custom-fade-in">
                                 <div class="col">
                                     <div class="gallery-one photo-overlay">
@@ -525,86 +576,18 @@
             </div>
         </div>
         <!--============== About Us Section Start ==============-->
-        <!-- <div class="full-row">
-            <div class="container">
-                <div class="row row-cols-md-2 row-cols-1">
-                    <div class="col col-lg-6 col-md-12">
-                        <span class="text-primary mb-2 d-table tagline-2 font-medium font-600">About Us</span>
-                        <h2 class="text-dark mb-4">Give your dreams a shape of architecture.</h2>
-                        <p>Finderland is one of the world's leading property agents. Our experience spans the globe.</p>
-                        <p>We have been advising on buying, selling and renting property for over 160 years, from country cottages to city centre offices, agricultural land to new-build developments.</p>
-                        
-                        <div class="d-flex flex-column flex-md-row">
-                            <ul class="list-style-tick d-flex flex-column me-md-2 me-0 pe-md-5">
-                                <li>Only pay when you publish</li>
-                                <li>Full featured event app</li>
-                                <li>Unlimited featured use</li>
-                            </ul>
-                            <ul class="list-style-tick d-flex flex-column ms-md-5 ms-0">
-                                <li>24/7 support</li>
-                                <li>Event analytics</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col col-lg-6 col-md-12">
-                        <img src="assets/images/property/10.png" alt="uniland real estate">
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!--==============- About Us Section End ==============-->
-
-        <!-- <div class="full-row p-0">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12"><hr></div>
-                </div>
-            </div>
-        </div> -->
-
-        <!-- =============== Counting ================-->
-        <!-- <div class="full-row">
-            <div class="container">
-                <div class="row row-cols-lg-3 row-cols-1">
-                    <div class="col">
-                        <div class="d-flex flex-row text-uppercase">
-                            <h1 class="text-primary mb-0 pe-4">$15.4M</h1>
-                            <p>Owned from <br>Properties Transactions</p>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="d-flex flex-row text-uppercase">
-                            <h1 class="text-primary mb-0 pe-4">25K+</h1>
-                            <p>Owned from <br>Properties Transactions</p>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="d-flex flex-row text-uppercase">
-                            <h1 class="text-primary mb-0 pe-4">500</h1>
-                            <p>Owned from <br>Properties Transactions</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- =============== Counting ================-->
-
+        
         <!--============== Recent Property Start ==============-->
         <div class="full-row bg-light pt-40">
             <div class="container">
                 <div class="row custom-fade-in">
-                    <div class="col mb-4">
-                        <div class="align-items-center d-flex">
-                            <div class="me-auto">
-                                <h2 class="d-table">Recent Products</h2>
-                            </div>
-                            <a href="product.html" class="ms-auto btn-link">View All Products</a>
-                        </div>
+                    <div class="col mb-5">
+                        <h2 class="down-line text-dark w-50 mx-auto text-center w-sm-100">Recent Products</h2>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
-                        <div class="3block-carusel nav-disable owl-carousel custom-fade-in">
+                        <div class="3block-carusel owl-carousel custom-fade-in">
                             <div class="item">
                                 <!-- Property Grid -->
                                 <div class="property-grid-1 property-block bg-white transation-this">
@@ -612,29 +595,17 @@
                                         <div class="cata position-absolute"><span class="sale bg-secondary text-white">For Sale</span></div>
                                         <a href="product-details.html"><img src="assets/images/property_grid/property-grid-1.png" alt="Image Not Found!"></a>
                                         <a href="#" class="listing-ctg text-white"><i class="fa-solid fa-building"></i><span>Apartment</span></a>
-                                        <ul class="position-absolute quick-meta">
-                                            <li><a href="#" title="Add Compare"><i class="flaticon-transfer flat-mini"></i></a></li>
-                                            <li><a href="#" title="Add Favourite"><i class="flaticon-like-1 flat-mini"></i></a></li>
-                                            <li class="md-mx-none"><a class="quick-view" href="#quick-view" title="Quick View"><i class="flaticon-zoom-increasing-symbol flat-mini"></i></a></li>
-                                        </ul>
                                     </div>
-                                    <!-- <div class="property_text p-4">
-                                        <span class="listing-price">$1850<small> ( Monthly )</small></span>
-                                        <h5 class="listing-title"><a href="product-details.html">Family House Residense</a></h5>
-                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 4213 South Burlington, VT 05403</span>
-                                        <ul class="d-flex quantity font-fifteen">
-                                            <li title="Beds"><span><i class="fa-solid fa-bed"></i></span>7</li>
-                                            <li title="Baths"><span><i class="fa-solid fa-shower"></i></span>5</li>
-                                            <li title="Area"><span><i class="fa-solid fa-vector-square"></i></span>1200 Sqft</li>
-                                            <li title="Gas"><span><i class="fa-solid fa-fire"></i></span>Yes</li>
-                                        </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <!-- Property Grid -->
+                                <div class="property-grid-1 property-block bg-white transation-this">
+                                    <div class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom">
+                                        <div class="cata position-absolute"><span class="sale bg-secondary text-white">For Sale</span></div>
+                                        <a href="product-details.html"><img src="assets/images/property_grid/property-grid-1.png" alt="Image Not Found!"></a>
+                                        <a href="#" class="listing-ctg text-white"><i class="fa-solid fa-building"></i><span>Apartment</span></a>
                                     </div>
-                                    <div class="d-flex align-items-center post-meta mt-2 py-3 px-4 border-top">
-                                        <div class="agent">
-                                            <a href="#" class="d-flex text-general align-items-center"><img class="rounded-circle me-2" src="assets/images/team/1.jpg" alt="avata"><span>Ali Tufan</span></a>
-                                        </div>
-                                        <div class="post-date ms-auto"><span>2 Month Ago</span></div>
-                                    </div> -->
                                 </div>
                             </div>
                             <div class="item">
@@ -647,29 +618,7 @@
                                         </div>
                                         <a href="product-details.html"><img src="assets/images/property_grid/property-grid-2.png" alt="Image Not Found!"></a>
                                         <a href="#" class="listing-ctg text-white"><i class="fa-solid fa-building"></i><span>Condo</span></a>
-                                        <ul class="position-absolute quick-meta">
-                                            <li><a href="#" title="Add Compare"><i class="flaticon-transfer flat-mini"></i></a></li>
-                                            <li><a href="#" title="Add Favourite"><i class="flaticon-like-1 flat-mini"></i></a></li>
-                                            <li class="md-mx-none"><a class="quick-view" href="#quick-view" title="Quick View"><i class="flaticon-zoom-increasing-symbol flat-mini"></i></a></li>
-                                        </ul>
                                     </div>
-                                    <!-- <div class="property_text p-4">
-                                        <span class="listing-price">$120,5500<small> ( One Time )</small></span>
-                                        <h5 class="listing-title"><a href="product-details.html">Luxury Condos Riverside</a></h5>
-                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 2305 Frog Lane Overlandpk, MO 66210</span>
-                                        <ul class="d-flex quantity font-fifteen">
-                                            <li title="Beds"><span><i class="fa-solid fa-bed"></i></span>7</li>
-                                            <li title="Baths"><span><i class="fa-solid fa-shower"></i></span>5</li>
-                                            <li title="Area"><span><i class="fa-solid fa-vector-square"></i></span>1200 Sqft</li>
-                                            <li title="Gas"><span><i class="fa-solid fa-fire"></i></span>Yes</li>
-                                        </ul>
-                                    </div>
-                                    <div class="d-flex align-items-center post-meta mt-2 py-3 px-4 border-top">
-                                        <div class="agent">
-                                            <a href="#" class="d-flex text-general align-items-center"><img class="rounded-circle me-2" src="assets/images/team/1.jpg" alt="avata"><span>Ali Tufan</span></a>
-                                        </div>
-                                        <div class="post-date ms-auto"><span>2 Month Ago</span></div>
-                                    </div> -->
                                 </div>
                             </div>
                             <div class="item">
@@ -681,129 +630,9 @@
                                         </div>
                                         <a href="product-details.html"><img src="assets/images/property_grid/property-grid-3.png" alt="Image Not Found!"></a>
                                         <a href="#" class="listing-ctg text-white"><i class="fa-solid fa-building"></i><span>Villa</span></a>
-                                        <ul class="position-absolute quick-meta">
-                                            <li><a href="#" title="Add Compare"><i class="flaticon-transfer flat-mini"></i></a></li>
-                                            <li><a href="#" title="Add Favourite"><i class="flaticon-like-1 flat-mini"></i></a></li>
-                                            <li class="md-mx-none"><a class="quick-view" href="#quick-view" title="Quick View"><i class="flaticon-zoom-increasing-symbol flat-mini"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <!-- <div class="property_text p-4">
-                                        <span class="listing-price">$3450<small> ( Monthly )</small></span>
-                                        <h5 class="listing-title"><a href="product-details.html">Gorgeous Villa Bay View</a></h5>
-                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 2305 Frog Lane Overlandpk, MO 66210</span>
-                                        <ul class="d-flex quantity font-fifteen">
-                                            <li title="Beds"><span><i class="fa-solid fa-bed"></i></span>7</li>
-                                            <li title="Baths"><span><i class="fa-solid fa-shower"></i></span>5</li>
-                                            <li title="Area"><span><i class="fa-solid fa-vector-square"></i></span>1200 Sqft</li>
-                                            <li title="Gas"><span><i class="fa-solid fa-fire"></i></span>Yes</li>
-                                        </ul>
-                                    </div>
-                                    <div class="d-flex align-items-center post-meta mt-2 py-3 px-4 border-top">
-                                        <div class="agent">
-                                            <a href="#" class="d-flex text-general align-items-center"><img class="rounded-circle me-2" src="assets/images/team/1.jpg" alt="avata"><span>Ali Tufan</span></a>
-                                        </div>
-                                        <div class="post-date ms-auto"><span>2 Month Ago</span></div>
-                                    </div> -->
-                                </div>
-                            </div>
-                            <!-- <div class="item">
-                                <div class="property-grid-1 property-block bg-white transation-this">
-                                    <div class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom">
-                                        <div class="cata position-absolute">
-                                            <span class="sale bg-secondary text-white">For Rent</span>
-                                        </div>
-                                        <a href="product-details.html"><img src="assets/images/property_grid/property-grid-4.png" alt="Image Not Found!"></a>
-                                        <a href="#" class="listing-ctg text-white"><i class="fa-solid fa-building"></i><span>Condo</span></a>
-                                        <ul class="position-absolute quick-meta">
-                                            <li><a href="#" title="Add Compare"><i class="flaticon-transfer flat-mini"></i></a></li>
-                                            <li><a href="#" title="Add Favourite"><i class="flaticon-like-1 flat-mini"></i></a></li>
-                                            <li class="md-mx-none"><a class="quick-view" href="#quick-view" title="Quick View"><i class="flaticon-zoom-increasing-symbol flat-mini"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="property_text p-4">
-                                        <span class="listing-price">$1,0450<small> ( Monthly )</small></span>
-                                        <h5 class="listing-title"><a href="product-details.html">New Developed Condos</a></h5>
-                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 2305 Frog Lane Overlandpk, MO 66210</span>
-                                        <ul class="d-flex quantity font-fifteen">
-                                            <li title="Beds"><span><i class="fa-solid fa-bed"></i></span>7</li>
-                                            <li title="Baths"><span><i class="fa-solid fa-shower"></i></span>5</li>
-                                            <li title="Area"><span><i class="fa-solid fa-vector-square"></i></span>1200 Sqft</li>
-                                            <li title="Gas"><span><i class="fa-solid fa-fire"></i></span>Yes</li>
-                                        </ul>
-                                    </div>
-                                    <div class="d-flex align-items-center post-meta mt-2 py-3 px-4 border-top">
-                                        <div class="agent">
-                                            <a href="#" class="d-flex text-general align-items-center"><img class="rounded-circle me-2" src="assets/images/team/1.jpg" alt="avata"><span>Ali Tufan</span></a>
-                                        </div>
-                                        <div class="post-date ms-auto"><span>2 Month Ago</span></div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="property-grid-1 property-block bg-white transation-this">
-                                    <div class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom">
-                                        <div class="cata position-absolute"><span class="sale bg-secondary text-white">For Sale</span></div>
-                                        <a href="product-details.html"><img src="assets/images/property_grid/property-grid-1.png" alt="Image Not Found!"></a>
-                                        <a href="#" class="listing-ctg text-white"><i class="fa-solid fa-building"></i><span>Apartment</span></a>
-                                        <ul class="position-absolute quick-meta">
-                                            <li><a href="#" title="Add Compare"><i class="flaticon-transfer flat-mini"></i></a></li>
-                                            <li><a href="#" title="Add Favourite"><i class="flaticon-like-1 flat-mini"></i></a></li>
-                                            <li class="md-mx-none"><a class="quick-view" href="#quick-view" title="Quick View"><i class="flaticon-zoom-increasing-symbol flat-mini"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="property_text p-4">
-                                        <span class="listing-price">$1850<small> ( Monthly )</small></span>
-                                        <h5 class="listing-title"><a href="product-details.html">Family House Residense</a></h5>
-                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 4213 Avenue South Burlington, VT 05403 </span>
-                                        <ul class="d-flex quantity font-fifteen">
-                                            <li title="Beds"><span><i class="fa-solid fa-bed"></i></span>7</li>
-                                            <li title="Baths"><span><i class="fa-solid fa-shower"></i></span>5</li>
-                                            <li title="Area"><span><i class="fa-solid fa-vector-square"></i></span>1200 Sqft</li>
-                                            <li title="Gas"><span><i class="fa-solid fa-fire"></i></span>Yes</li>
-                                        </ul>
-                                    </div>
-                                    <div class="d-flex align-items-center post-meta mt-2 py-3 px-4 border-top">
-                                        <div class="agent">
-                                            <a href="#" class="d-flex text-general align-items-center"><img class="rounded-circle me-2" src="assets/images/team/1.jpg" alt="avata"><span>Ali Tufan</span></a>
-                                        </div>
-                                        <div class="post-date ms-auto"><span>2 Month Ago</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="property-grid-1 property-block bg-white transation-this">
-                                    <div class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom">
-                                        <div class="cata position-absolute">
-                                            <span class="sale bg-secondary text-white">For Sale</span>
-                                            <span class="featured bg-primary text-white">Featured</span>
-                                        </div>
-                                        <a href="product-details.html"><img src="assets/images/property_grid/property-grid-2.png" alt="Image Not Found!"></a>
-                                        <a href="#" class="listing-ctg text-white"><i class="fa-solid fa-building"></i><span>Condos</span></a>
-                                        <ul class="position-absolute quick-meta">
-                                            <li><a href="#" title="Add Compare"><i class="flaticon-transfer flat-mini"></i></a></li>
-                                            <li><a href="#" title="Add Favourite"><i class="flaticon-like-1 flat-mini"></i></a></li>
-                                            <li class="md-mx-none"><a class="quick-view" href="#quick-view" title="Quick View"><i class="flaticon-zoom-increasing-symbol flat-mini"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="property_text p-4">
-                                        <span class="listing-price">$100,8850<small> ( One Time )</small></span>
-                                        <h5 class="listing-title"><a href="product-details.html">Luxury Condos</a></h5>
-                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 2305 Frog Lane Overlandpk, MO 66210</span>
-                                        <ul class="d-flex quantity font-fifteen">
-                                            <li title="Beds"><span><i class="fa-solid fa-bed"></i></span>7</li>
-                                            <li title="Baths"><span><i class="fa-solid fa-shower"></i></span>5</li>
-                                            <li title="Area"><span><i class="fa-solid fa-vector-square"></i></span>1200 Sqft</li>
-                                            <li title="Gas"><span><i class="fa-solid fa-fire"></i></span>Yes</li>
-                                        </ul>
-                                    </div>
-                                    <div class="d-flex align-items-center post-meta mt-2 py-3 px-4 border-top">
-                                        <div class="agent">
-                                            <a href="#" class="d-flex text-general align-items-center"><img class="rounded-circle me-2" src="assets/images/team/1.jpg" alt="avata"><span>Ali Tufan</span></a>
-                                        </div>
-                                        <div class="post-date ms-auto"><span>2 Month Ago</span></div>
-                                    </div>
-                                </div>
-                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -821,7 +650,7 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <div class="3block-carusel nav-disable owl-carousel custom-fade-in">
+                        <div class="3block-carusel owl-carousel custom-fade-in">
                             <div class="item">
                                 <!-- Property Grid -->
                                 <div class="property-grid-1 property-block bg-white transation-this">
@@ -829,29 +658,17 @@
                                         <div class="cata position-absolute"><span class="sale bg-secondary text-white">For Sale</span></div>
                                         <a href="product-details.html"><img src="assets/images/property_grid/property-grid-1.png" alt="Image Not Found!"></a>
                                         <a href="#" class="listing-ctg text-white"><i class="fa-solid fa-building"></i><span>Apartment</span></a>
-                                        <ul class="position-absolute quick-meta">
-                                            <li><a href="#" title="Add Compare"><i class="flaticon-transfer flat-mini"></i></a></li>
-                                            <li><a href="#" title="Add Favourite"><i class="flaticon-like-1 flat-mini"></i></a></li>
-                                            <li class="md-mx-none"><a class="quick-view" href="#quick-view" title="Quick View"><i class="flaticon-zoom-increasing-symbol flat-mini"></i></a></li>
-                                        </ul>
                                     </div>
-                                    <!-- <div class="property_text p-4">
-                                        <span class="listing-price">$1850<small> ( Monthly )</small></span>
-                                        <h5 class="listing-title"><a href="product-details.html">Family House Residense</a></h5>
-                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 4213 South Burlington, VT 05403 </span>
-                                        <ul class="d-flex quantity font-fifteen">
-                                            <li title="Beds"><span><i class="fa-solid fa-bed"></i></span>7</li>
-                                            <li title="Baths"><span><i class="fa-solid fa-shower"></i></span>5</li>
-                                            <li title="Area"><span><i class="fa-solid fa-vector-square"></i></span>1200 Sqft</li>
-                                            <li title="Gas"><span><i class="fa-solid fa-fire"></i></span>Yes</li>
-                                        </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <!-- Property Grid -->
+                                <div class="property-grid-1 property-block bg-white transation-this">
+                                    <div class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom">
+                                        <div class="cata position-absolute"><span class="sale bg-secondary text-white">For Sale</span></div>
+                                        <a href="product-details.html"><img src="assets/images/property_grid/property-grid-1.png" alt="Image Not Found!"></a>
+                                        <a href="#" class="listing-ctg text-white"><i class="fa-solid fa-building"></i><span>Apartment</span></a>
                                     </div>
-                                    <div class="d-flex align-items-center post-meta mt-2 py-3 px-4 border-top">
-                                        <div class="agent">
-                                            <a href="#" class="d-flex text-general align-items-center"><img class="rounded-circle me-2" src="assets/images/team/1.jpg" alt="avata"><span>Ali Tufan</span></a>
-                                        </div>
-                                        <div class="post-date ms-auto"><span>2 Month Ago</span></div>
-                                    </div> -->
                                 </div>
                             </div>
                             <div class="item">
@@ -864,29 +681,7 @@
                                         </div>
                                         <a href="product-details.html"><img src="assets/images/property_grid/property-grid-2.png" alt="Image Not Found!"></a>
                                         <a href="#" class="listing-ctg text-white"><i class="fa-solid fa-building"></i><span>Condo</span></a>
-                                        <ul class="position-absolute quick-meta">
-                                            <li><a href="#" title="Add Compare"><i class="flaticon-transfer flat-mini"></i></a></li>
-                                            <li><a href="#" title="Add Favourite"><i class="flaticon-like-1 flat-mini"></i></a></li>
-                                            <li class="md-mx-none"><a class="quick-view" href="#quick-view" title="Quick View"><i class="flaticon-zoom-increasing-symbol flat-mini"></i></a></li>
-                                        </ul>
                                     </div>
-                                    <!-- <div class="property_text p-4">
-                                        <span class="listing-price">$120,5500<small> ( One Time )</small></span>
-                                        <h5 class="listing-title"><a href="product-details.html">Luxury Condos Riverside</a></h5>
-                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 2305 Frog Lane Overlandpk, MO 66210</span>
-                                        <ul class="d-flex quantity font-fifteen">
-                                            <li title="Beds"><span><i class="fa-solid fa-bed"></i></span>7</li>
-                                            <li title="Baths"><span><i class="fa-solid fa-shower"></i></span>5</li>
-                                            <li title="Area"><span><i class="fa-solid fa-vector-square"></i></span>1200 Sqft</li>
-                                            <li title="Gas"><span><i class="fa-solid fa-fire"></i></span>Yes</li>
-                                        </ul>
-                                    </div>
-                                    <div class="d-flex align-items-center post-meta mt-2 py-3 px-4 border-top">
-                                        <div class="agent">
-                                            <a href="#" class="d-flex text-general align-items-center"><img class="rounded-circle me-2" src="assets/images/team/1.jpg" alt="avata"><span>Ali Tufan</span></a>
-                                        </div>
-                                        <div class="post-date ms-auto"><span>2 Month Ago</span></div>
-                                    </div> -->
                                 </div>
                             </div>
                             <div class="item">
@@ -898,127 +693,7 @@
                                         </div>
                                         <a href="product-details.html"><img src="assets/images/property_grid/property-grid-3.png" alt="Image Not Found!"></a>
                                         <a href="#" class="listing-ctg text-white"><i class="fa-solid fa-building"></i><span>Villa</span></a>
-                                        <ul class="position-absolute quick-meta">
-                                            <li><a href="#" title="Add Compare"><i class="flaticon-transfer flat-mini"></i></a></li>
-                                            <li><a href="#" title="Add Favourite"><i class="flaticon-like-1 flat-mini"></i></a></li>
-                                            <li class="md-mx-none"><a class="quick-view" href="#quick-view" title="Quick View"><i class="flaticon-zoom-increasing-symbol flat-mini"></i></a></li>
-                                        </ul>
                                     </div>
-                                    <!-- <div class="property_text p-4">
-                                        <span class="listing-price">$3450<small> ( Monthly )</small></span>
-                                        <h5 class="listing-title"><a href="product-details.html">Gorgeous Villa Bay View</a></h5>
-                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 2305 Frog Lane Overlandpk, MO 66210</span>
-                                        <ul class="d-flex quantity font-fifteen">
-                                            <li title="Beds"><span><i class="fa-solid fa-bed"></i></span>7</li>
-                                            <li title="Baths"><span><i class="fa-solid fa-shower"></i></span>5</li>
-                                            <li title="Area"><span><i class="fa-solid fa-vector-square"></i></span>1200 Sqft</li>
-                                            <li title="Gas"><span><i class="fa-solid fa-fire"></i></span>Yes</li>
-                                        </ul>
-                                    </div>
-                                    <div class="d-flex align-items-center post-meta mt-2 py-3 px-4 border-top">
-                                        <div class="agent">
-                                            <a href="#" class="d-flex text-general align-items-center"><img class="rounded-circle me-2" src="assets/images/team/1.jpg" alt="avata"><span>Ali Tufan</span></a>
-                                        </div>
-                                        <div class="post-date ms-auto"><span>2 Month Ago</span></div>
-                                    </div> -->
-                                </div>
-                            </div>
-                            <!-- <div class="item">
-                                <div class="property-grid-1 property-block bg-white transation-this">
-                                    <div class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom">
-                                        <div class="cata position-absolute">
-                                            <span class="sale bg-secondary text-white">For Rent</span>
-                                        </div>
-                                        <a href="product-details.html"><img src="assets/images/property_grid/property-grid-4.png" alt="Image Not Found!"></a>
-                                        <a href="#" class="listing-ctg text-white"><i class="fa-solid fa-building"></i><span>Condo</span></a>
-                                        <ul class="position-absolute quick-meta">
-                                            <li><a href="#" title="Add Compare"><i class="flaticon-transfer flat-mini"></i></a></li>
-                                            <li><a href="#" title="Add Favourite"><i class="flaticon-like-1 flat-mini"></i></a></li>
-                                            <li class="md-mx-none"><a class="quick-view" href="#quick-view" title="Quick View"><i class="flaticon-zoom-increasing-symbol flat-mini"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="property_text p-4">
-                                        <span class="listing-price">$1,0450<small> ( Monthly )</small></span>
-                                        <h5 class="listing-title"><a href="product-details.html">New Developed Condos</a></h5>
-                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 2305 Frog Lane Overlandpk, MO 66210</span>
-                                        <ul class="d-flex quantity font-fifteen">
-                                            <li title="Beds"><span><i class="fa-solid fa-bed"></i></span>7</li>
-                                            <li title="Baths"><span><i class="fa-solid fa-shower"></i></span>5</li>
-                                            <li title="Area"><span><i class="fa-solid fa-vector-square"></i></span>1200 Sqft</li>
-                                            <li title="Gas"><span><i class="fa-solid fa-fire"></i></span>Yes</li>
-                                        </ul>
-                                    </div>
-                                    <div class="d-flex align-items-center post-meta mt-2 py-3 px-4 border-top">
-                                        <div class="agent">
-                                            <a href="#" class="d-flex text-general align-items-center"><img class="rounded-circle me-2" src="assets/images/team/1.jpg" alt="avata"><span>Ali Tufan</span></a>
-                                        </div>
-                                        <div class="post-date ms-auto"><span>2 Month Ago</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="property-grid-1 property-block bg-white transation-this">
-                                    <div class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom">
-                                        <div class="cata position-absolute"><span class="sale bg-secondary text-white">For Sale</span></div>
-                                        <a href="product-details.html"><img src="assets/images/property_grid/property-grid-1.png" alt="Image Not Found!"></a>
-                                        <a href="#" class="listing-ctg text-white"><i class="fa-solid fa-building"></i><span>Apartment</span></a>
-                                        <ul class="position-absolute quick-meta">
-                                            <li><a href="#" title="Add Compare"><i class="flaticon-transfer flat-mini"></i></a></li>
-                                            <li><a href="#" title="Add Favourite"><i class="flaticon-like-1 flat-mini"></i></a></li>
-                                            <li class="md-mx-none"><a class="quick-view" href="#quick-view" title="Quick View"><i class="flaticon-zoom-increasing-symbol flat-mini"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="property_text p-4">
-                                        <span class="listing-price">$1850<small> ( Monthly )</small></span>
-                                        <h5 class="listing-title"><a href="product-details.html">Family House Residense</a></h5>
-                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 4213 Avenue South Burlington, VT 05403 </span>
-                                        <ul class="d-flex quantity font-fifteen">
-                                            <li title="Beds"><span><i class="fa-solid fa-bed"></i></span>7</li>
-                                            <li title="Baths"><span><i class="fa-solid fa-shower"></i></span>5</li>
-                                            <li title="Area"><span><i class="fa-solid fa-vector-square"></i></span>1200 Sqft</li>
-                                            <li title="Gas"><span><i class="fa-solid fa-fire"></i></span>Yes</li>
-                                        </ul>
-                                    </div>
-                                    <div class="d-flex align-items-center post-meta mt-2 py-3 px-4 border-top">
-                                        <div class="agent">
-                                            <a href="#" class="d-flex text-general align-items-center"><img class="rounded-circle me-2" src="assets/images/team/1.jpg" alt="avata"><span>Ali Tufan</span></a>
-                                        </div>
-                                        <div class="post-date ms-auto"><span>2 Month Ago</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="property-grid-1 property-block bg-white transation-this">
-                                    <div class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom">
-                                        <div class="cata position-absolute">
-                                            <span class="sale bg-secondary text-white">For Sale</span>
-                                            <span class="featured bg-primary text-white">Featured</span>
-                                        </div>
-                                        <a href="product-details.html"><img src="assets/images/property_grid/property-grid-2.png" alt="Image Not Found!"></a>
-                                        <a href="#" class="listing-ctg text-white"><i class="fa-solid fa-building"></i><span>Condos</span></a>
-                                        <ul class="position-absolute quick-meta">
-                                            <li><a href="#" title="Add Compare"><i class="flaticon-transfer flat-mini"></i></a></li>
-                                            <li><a href="#" title="Add Favourite"><i class="flaticon-like-1 flat-mini"></i></a></li>
-                                            <li class="md-mx-none"><a class="quick-view" href="#quick-view" title="Quick View"><i class="flaticon-zoom-increasing-symbol flat-mini"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="property_text p-4">
-                                        <span class="listing-price">$100,8850<small> ( One Time )</small></span>
-                                        <h5 class="listing-title"><a href="product-details.html">Luxury Condos</a></h5>
-                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 2305 Frog Lane Overlandpk, MO 66210</span>
-                                        <ul class="d-flex quantity font-fifteen">
-                                            <li title="Beds"><span><i class="fa-solid fa-bed"></i></span>7</li>
-                                            <li title="Baths"><span><i class="fa-solid fa-shower"></i></span>5</li>
-                                            <li title="Area"><span><i class="fa-solid fa-vector-square"></i></span>1200 Sqft</li>
-                                            <li title="Gas"><span><i class="fa-solid fa-fire"></i></span>Yes</li>
-                                        </ul>
-                                    </div>
-                                    <div class="d-flex align-items-center post-meta mt-2 py-3 px-4 border-top">
-                                        <div class="agent">
-                                            <a href="#" class="d-flex text-general align-items-center"><img class="rounded-circle me-2" src="assets/images/team/1.jpg" alt="avata"><span>Ali Tufan</span></a>
-                                        </div>
-                                        <div class="post-date ms-auto"><span>2 Month Ago</span></div>
-                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -1434,8 +1109,8 @@
                     <div class="col custom-fade-in">
                         <ul class="line-menu float-end list-color-gray">
                             <li><a href="#">Privacy & Policy </a></li>
-                            <li>|</li>
-                            <li><a href="#">Site Map</a></li>
+                            <!-- <li>|</li>
+                            <li><a href="#">Site Map</a></li> -->
                         </ul>
                     </div>
                 </div>
@@ -1444,8 +1119,21 @@
         
         <!--============== Copyright Section End ==============-->
 
-        <!-- Scroll to top -->
-        <div class="scroll-top-vertical xs-mx-none" id="scroll">Go Top <i class="ms-2 fa-solid fa-arrow-right-long"></i></div>
+        <!-- Scroll to top and Chatbot -->
+        <div class="scroll-top-chat-container">
+            <!-- Scroll to Top -->
+            <div class="scroll-top-vertical xs-mx-none" id="scroll">
+                Go Top <i class="ms-2 fa-solid fa-arrow-right-long"></i>
+            </div>
+            <!-- Chatbot Icon -->
+            <div class="chatbot-icon p-10">
+                <span href="#" id="chatbot">
+                    <i class="fa-solid fa-comment-dots"></i>
+                </span>
+            </div>
+        </div>
+        <!-- End Scroll to Top and Chatbot -->
+
         <!-- End Scroll To top -->
 
         <!--============== Modal Start ==============-->

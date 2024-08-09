@@ -258,11 +258,12 @@
                                         <li class="nav-item">
                                             <a class="nav-link" href="product.html">Product</a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="career.html">Career</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="contact.html">Contact</a>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#">Contact</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+                                                <li><a class="dropdown-item" href="career.html">Careers</a></li>
+                                            </ul>
                                         </li>
                                     </ul>
                                     <!-- <ul class="navbar-nav user-button sm-mx-none ps-3">
@@ -347,7 +348,7 @@
                     <div class="col-md-7 order-md-1 custom-fade-in">
                         <h4 class="down-line mb-4">Send Message</h4>
                         <div class="form-simple">
-                            <form id="contact-form" action="#" method="post" novalidate="novalidate">
+                            <form id="send-message" action="#" method="post" novalidate="novalidate">
                                 <div class="row">
                                     <div class="col-md-6 mb-20">
                                         <label class="mb-2">Full Name:</label>
@@ -444,8 +445,8 @@
                     <div class="col custom-fade-in">
                         <ul class="line-menu float-end list-color-gray">
                             <li><a href="#">Privacy & Policy </a></li>
-                            <li>|</li>
-                            <li><a href="#">Site Map</a></li>
+                            <!-- <li>|</li>
+                            <li><a href="#">Site Map</a></li> -->
                         </ul>
                     </div>
                 </div>
@@ -453,9 +454,20 @@
         </div>
         <!--============== Copyright Section End ==============-->
 
-        <!-- Scroll to top -->
-        <div class="scroll-top-vertical xs-mx-none" id="scroll">Go Top <i class="ms-2 fa-solid fa-arrow-right-long"></i></div>
-        <!-- End Scroll To top -->
+        <!-- Scroll to top and Chatbot -->
+        <div class="scroll-top-chat-container">
+            <!-- Scroll to Top -->
+            <div class="scroll-top-vertical xs-mx-none" id="scroll">
+                Go Top <i class="ms-2 fa-solid fa-arrow-right-long"></i>
+            </div>
+            <!-- Chatbot Icon -->
+            <div class="chatbot-icon p-10">
+                <span href="#" id="chatbot">
+                    <i class="fa-solid fa-comment-dots"></i>
+                </span>
+            </div>
+        </div>
+        <!-- End Scroll to Top and Chatbot -->
     </div>
 
     <!-- Javascript Files -->
