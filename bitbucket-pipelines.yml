@@ -1,0 +1,11 @@
+pipelines:
+  branches:
+    dev:
+      - step:
+          name: 'Sync Bitbucket Dev to GitHub Dev'
+          script:
+            - git remote add github "https://pavankm327:${GITHUB_TOKEN}@github.com/pavankm327/oscine.git"
+            - git fetch github dev
+            - git checkout dev
+            - git merge github/dev --allow-unrelated-histories
+            - git push github dev
