@@ -34,6 +34,67 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/colors/color.css">
     <link rel="stylesheet" href="assets/css/loader.css">
+
+    <style>
+        .sticky-container {
+            padding: 0px;
+            margin: 0px;
+            position: fixed;
+            left: -98px; 
+            top: 230px;
+            width: 135px; /* Width of the container */
+            z-index: 1100;
+        }
+
+        .sticky {
+            padding: 0;
+            margin: 0;
+        }
+
+        .sticky li {
+            list-style-type: none;
+            background: #ffffff;
+            color: #efefef;
+            height: 30px;
+            padding: 0px;
+            margin: 0px 0px 1px 0px;
+            transition: all 0.5s ease-in-out;
+            cursor: pointer;
+            display: flex; 
+            align-items: center; 
+            width: 100%;
+        }
+
+        .sticky li:hover {
+            transform: translateX(98px);
+        }
+
+        .sticky li img {
+            margin: 0 10px;
+            order: 2; 
+        }
+
+        .sticky li p {
+            padding: 0;
+            margin: 0;
+            margin-left: 8px;
+            line-height: 30px;
+            font-size: 14px;
+            order: 1; 
+            flex-grow: 1; 
+        }
+
+        .sticky li p a {
+            text-decoration: none; 
+            color: #000000;
+            width: 100%; 
+            display: block; 
+        }
+
+        .sticky li p a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
@@ -58,9 +119,12 @@
                                     <ul class="navbar-nav ms-auto">
                                         <li class="nav-item">
                                             <a class="nav-link" href="index.html">Home</a>
-                                        </li> 
+                                        </li>  
                                         <li class="nav-item">
-                                            <a class="nav-link" href="product.html">Product</a>
+                                            <a class="nav-link" href="product.html">Products</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="manufacture.html">Manufactures</a>
                                         </li>
                                         <li class="nav-item dropdown">
                                             <a class="nav-link dropdown-toggle" href="#">Contact</a>
@@ -211,10 +275,10 @@
                         <div class="footer-widget footer-nav mb-4">
                             <h3 class="widget-title mb-4">Quick Links</h3>
                             <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Products</a></li>
-                                <li><a href="#">Brands</a></li>
-                                <li><a href="#">Contact us</a></li>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="product.html">Products</a></li>
+                                <li><a href="manufacture.html">Manufactures</a></li>
+                                <li><a href="contact.html">Contact us</a></li>
                             </ul>
                         </div>
                     </div>
@@ -279,6 +343,18 @@
         </div>
         <!-- End Scroll to Top and Chatbot -->
     </div>
+    <div class="sticky-container">
+        <ul class="sticky">
+            <li>
+                <p><a href="contact.html">Contact Us</a></p>
+                <img src="https://cdn4.iconfinder.com/data/icons/leto-devices-1/64/phone_telephone_contact-512.png" style="width:20px">
+            </li>
+            <li>
+                <p><a href="#">Whatsapp </a></p>
+                <img src="https://cdn3.iconfinder.com/data/icons/social-media-logos-flat-colorful/2048/5302_-_Whatsapp-1024.png" style="width:20px">
+            </li>
+        </ul>
+    </div>
 
     <!-- Javascript Files -->
     <script src="assets/js/jquery.min.js"></script>
@@ -303,10 +379,12 @@
                 const windowHeight = window.innerHeight;
 
                 elements.forEach(element => {
-                const rect = element.getBoundingClientRect();
-                if (rect.top < windowHeight && rect.bottom > 0) {
-                    element.classList.add('visible');
-                }
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top < windowHeight && rect.bottom > 0) {
+                        element.classList.add('visible');
+                    } else {
+                        element.classList.remove('visible');
+                    }
                 });
             }
 

@@ -81,6 +81,64 @@
         .owl-nav .owl-next:hover {
             background-color: rgba(0,0,0,0.7) !important;
         }
+        .sticky-container {
+            padding: 0px;
+            margin: 0px;
+            position: fixed;
+            left: -98px; 
+            top: 230px;
+            width: 135px; /* Width of the container */
+            z-index: 1100;
+        }
+
+        .sticky {
+            padding: 0;
+            margin: 0;
+        }
+
+        .sticky li {
+            list-style-type: none;
+            background: #ffffff;
+            color: #efefef;
+            height: 30px;
+            padding: 0px;
+            margin: 0px 0px 1px 0px;
+            transition: all 0.5s ease-in-out;
+            cursor: pointer;
+            display: flex; 
+            align-items: center; 
+            width: 100%;
+        }
+
+        .sticky li:hover {
+            transform: translateX(98px);
+        }
+
+        .sticky li img {
+            margin: 0 10px;
+            order: 2; 
+        }
+
+        .sticky li p {
+            padding: 0;
+            margin: 0;
+            margin-left: 8px;
+            line-height: 30px;
+            font-size: 14px;
+            order: 1; 
+            flex-grow: 1; 
+        }
+
+        .sticky li p a {
+            text-decoration: none; 
+            color: #000000;
+            width: 100%; 
+            display: block; 
+        }
+
+        .sticky li p a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 
@@ -319,7 +377,10 @@
                                             <a class="nav-link" href="index.html"  style="color:#fff!important;">Home</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="product.html">Product</a>
+                                            <a class="nav-link" href="product.html">Products</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="manufacture.html">Manufactures</a>
                                         </li>
                                         <li class="nav-item dropdown">
                                             <a class="nav-link dropdown-toggle" href="#">Contact</a>
@@ -577,8 +638,128 @@
         </div>
         <!--============== About Us Section Start ==============-->
         
+        <!--============== Property Location Start ==============-->
+        <div class="full-row bg-gray pt-40">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 pb-20">
+                        <div class="row custom-fade-in">
+                            <div class="col">
+                                <div class="text-secondary text-center mb-5">
+                                    <h2 class="down-line text-secondary mx-auto text-center w-sm-100">Recent Products</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-4 location-style-1">
+                            <div class="col-md-6 custom-fade-in">
+                                <div class="property-grid-1 property-block bg-white transation-this">
+                                    <div class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom">
+                                        <div class="cata position-absolute">
+                                            <span class="sale bg-secondary text-white">For Rent</span>
+                                        </div>
+                                        <a href="product-details.html"><img src="assets/images/property_grid/property-grid-3.png" alt="Image Not Found!"></a>
+                                        <a href="#" class="listing-ctg text-white"><i class="fa-solid fa-building"></i><span>Villa</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 custom-fade-in">
+                                <div class="property-grid-1 property-block bg-white transation-this">
+                                    <div class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom">
+                                        <div class="cata position-absolute">
+                                            <span class="sale bg-secondary text-white">For Rent</span>
+                                        </div>
+                                        <a href="product-details.html"><img src="assets/images/property_grid/property-grid-3.png" alt="Image Not Found!"></a>
+                                        <a href="#" class="listing-ctg text-white"><i class="fa-solid fa-building"></i><span>Villa</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 custom-fade-in">
+                                <div class="property-grid-1 property-block bg-white transation-this">
+                                    <div class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom">
+                                        <div class="cata position-absolute">
+                                            <span class="sale bg-secondary text-white">For Rent</span>
+                                        </div>
+                                        <a href="product-details.html"><img src="assets/images/property_grid/property-grid-3.png" alt="Image Not Found!"></a>
+                                        <a href="#" class="listing-ctg text-white"><i class="fa-solid fa-building"></i><span>Villa</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 custom-fade-in">
+                                <div class="property-grid-1 property-block bg-white transation-this">
+                                    <div class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom">
+                                        <div class="cata position-absolute">
+                                            <span class="sale bg-secondary text-white">For Rent</span>
+                                        </div>
+                                        <a href="product-details.html"><img src="assets/images/property_grid/property-grid-3.png" alt="Image Not Found!"></a>
+                                        <a href="#" class="listing-ctg text-white"><i class="fa-solid fa-building"></i><span>Villa</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="row custom-fade-in">
+                            <div class="col">
+                                <div class="text-secondary text-center mb-5">
+                                    <h2 class="down-line text-secondary mx-auto text-center w-sm-100">Featured Products</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-4 location-style-1">
+                            <div class="col-md-6 custom-fade-in">
+                                <div class="property-grid-1 property-block bg-white transation-this">
+                                    <div class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom">
+                                        <div class="cata position-absolute">
+                                            <span class="sale bg-secondary text-white">For Sale</span>
+                                            <span class="featured bg-primary text-white">Featured</span>
+                                        </div>
+                                        <a href="product-details.html"><img src="assets/images/property_grid/property-grid-2.png" alt="Image Not Found!"></a>
+                                        <a href="#" class="listing-ctg text-white"><i class="fa-solid fa-building"></i><span>Apartment</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 custom-fade-in">
+                                <div class="property-grid-1 property-block bg-white transation-this">
+                                    <div class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom">
+                                        <div class="cata position-absolute">
+                                            <span class="sale bg-secondary text-white">For Rent</span>
+                                        </div>
+                                        <a href="product-details.html"><img src="assets/images/property_grid/property-grid-3.png" alt="Image Not Found!"></a>
+                                        <a href="#" class="listing-ctg text-white"><i class="fa-solid fa-building"></i><span>Villa</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 custom-fade-in">
+                                <div class="property-grid-1 property-block bg-white transation-this">
+                                    <div class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom">
+                                        <div class="cata position-absolute">
+                                            <span class="sale bg-secondary text-white">For Rent</span>
+                                        </div>
+                                        <a href="product-details.html"><img src="assets/images/property_grid/property-grid-3.png" alt="Image Not Found!"></a>
+                                        <a href="#" class="listing-ctg text-white"><i class="fa-solid fa-building"></i><span>Villa</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 custom-fade-in">
+                                <div class="property-grid-1 property-block bg-white transation-this">
+                                    <div class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom">
+                                        <div class="cata position-absolute">
+                                            <span class="sale bg-secondary text-white">For Rent</span>
+                                        </div>
+                                        <a href="product-details.html"><img src="assets/images/property_grid/property-grid-3.png" alt="Image Not Found!"></a>
+                                        <a href="#" class="listing-ctg text-white"><i class="fa-solid fa-building"></i><span>Villa</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--============== Property Location End ==============-->
+
         <!--============== Recent Property Start ==============-->
-        <div class="full-row bg-light pt-40">
+        <!-- <div class="full-row bg-light pt-40">
             <div class="container">
                 <div class="row custom-fade-in">
                     <div class="col mb-5">
@@ -589,7 +770,6 @@
                     <div class="col">
                         <div class="3block-carusel owl-carousel custom-fade-in">
                             <div class="item">
-                                <!-- Property Grid -->
                                 <div class="property-grid-1 property-block bg-white transation-this">
                                     <div class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom">
                                         <div class="cata position-absolute"><span class="sale bg-secondary text-white">For Sale</span></div>
@@ -599,7 +779,6 @@
                                 </div>
                             </div>
                             <div class="item">
-                                <!-- Property Grid -->
                                 <div class="property-grid-1 property-block bg-white transation-this">
                                     <div class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom">
                                         <div class="cata position-absolute"><span class="sale bg-secondary text-white">For Sale</span></div>
@@ -609,7 +788,6 @@
                                 </div>
                             </div>
                             <div class="item">
-                                <!-- Property Grid -->
                                 <div class="property-grid-1 property-block bg-white transation-this">
                                     <div class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom">
                                         <div class="cata position-absolute">
@@ -622,7 +800,6 @@
                                 </div>
                             </div>
                             <div class="item">
-                                <!-- Property Grid -->
                                 <div class="property-grid-1 property-block bg-white transation-this">
                                     <div class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom">
                                         <div class="cata position-absolute">
@@ -637,11 +814,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!--============== Recent Property End ==============-->
 
         <!--============== Featured Products Start ==============-->
-        <div class="full-row bg-secondary pt-40">
+        <!-- <div class="full-row bg-secondary pt-40">
             <div class="container">
                 <div class="row custom-fade-in">
                     <div class="col mb-5">
@@ -652,7 +829,6 @@
                     <div class="col">
                         <div class="3block-carusel owl-carousel custom-fade-in">
                             <div class="item">
-                                <!-- Property Grid -->
                                 <div class="property-grid-1 property-block bg-white transation-this">
                                     <div class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom">
                                         <div class="cata position-absolute"><span class="sale bg-secondary text-white">For Sale</span></div>
@@ -662,7 +838,6 @@
                                 </div>
                             </div>
                             <div class="item">
-                                <!-- Property Grid -->
                                 <div class="property-grid-1 property-block bg-white transation-this">
                                     <div class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom">
                                         <div class="cata position-absolute"><span class="sale bg-secondary text-white">For Sale</span></div>
@@ -672,7 +847,6 @@
                                 </div>
                             </div>
                             <div class="item">
-                                <!-- Property Grid -->
                                 <div class="property-grid-1 property-block bg-white transation-this">
                                     <div class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom">
                                         <div class="cata position-absolute">
@@ -685,7 +859,6 @@
                                 </div>
                             </div>
                             <div class="item">
-                                <!-- Property Grid -->
                                 <div class="property-grid-1 property-block bg-white transation-this">
                                     <div class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom">
                                         <div class="cata position-absolute">
@@ -700,7 +873,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!--============== Featured Products End ==============-->
 
         <!--============== Property Agent Start ==============-->
@@ -856,12 +1029,12 @@
         </div> -->
         <!--============== Testimonial Section End ==============-->
 
-        <!--============== Popular Categories Start ==============-->
+        <!--============== Industries We Serve Start ==============-->
         <div class="full-row bg-light pt-40">
             <div class="container">
                 <div class="row custom-fade-in">
                     <div class="col mb-5">
-                        <h2 class="down-line w-50 mx-auto mb-4 text-center text-dark w-sm-100">Popular Categories</h2>
+                        <h2 class="down-line w-50 mx-auto mb-4 text-center text-dark w-sm-100">Industries We Serve</h2>
                         <!-- <span class="d-table w-50 w-sm-100 sub-title text-white fw-normal mx-auto text-center">Mauris primis turpis Laoreet magna felis mi amet quam enim curae. Sodales semper tempor dictum faucibus habitasse.</span> -->
                     </div>
                 </div>
@@ -951,7 +1124,43 @@
             </div>
         </div>
         <!--============== Popular Categories End ==============-->
-
+        <!--============== Client Logo Start ==============-->
+        <div class="full-row bg-white pt-40 pb-20">
+            <div class="container">
+                <div class="row custom-fade-in">
+                    <div class="col position-relative">
+                        <span class="box-tab-line h6 text-primary bg-white x-center px-2">Our Partners</span>
+                        <h2 class="box-title text-secondary text-center mx-auto mb-4 font-400">Leading Brands &amp; Manufacturers</h2>
+                        <span class="sub-title text-secondary text-center mx-auto higlight-font mb-5 w-50 w-md-100">Partnering with innovative brands, we are committed to delivering fresh, tailored solutions to meet modern industry needs and expectations.</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="owl-carousel partner-slider">
+                            <div class="item bg-white custom-fade-in">
+                                <a href="#"><img src="assets/images/partner/logo-1.jpg" alt="Image not found!" /></a>
+                            </div>
+                            <div class="item bg-white custom-fade-in">
+                                <a href="#"><img src="assets/images/partner/logo-2.jpg" alt="Image not found!" /></a>
+                            </div>
+                            <div class="item bg-white custom-fade-in">
+                                <a href="#"><img src="assets/images/partner/logo-3.jpg" alt="Image not found!" /></a>
+                            </div>
+                            <div class="item bg-white custom-fade-in">
+                                <a href="#"><img src="assets/images/partner/logo-4.jpg" alt="Image not found!" /></a>
+                            </div>
+                            <div class="item bg-white custom-fade-in">
+                                <a href="#"><img src="assets/images/partner/logo-5.jpg" alt="Image not found!" /></a>
+                            </div>
+                            <div class="item bg-white custom-fade-in">
+                                <a href="#"><img src="assets/images/partner/logo-6.jpg" alt="Image not found!" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--============== Client Logo End ==============-->
         <!--============== Blog Section Start ==============-->
         <!-- <div class="full-row bg-light">
             <div class="container">
@@ -1028,7 +1237,7 @@
         <!--============== Blog Section End ==============-->
 
         <!--============== Register Section Start ==============-->
-        <div class="full-row bg-primary py-4">
+        <!-- <div class="full-row bg-primary py-4">
             <div class="container">
                 <div class="row custom-fade-in">
                     <div class="col-lg-9 col-md-8">
@@ -1039,7 +1248,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!--============== Register Section End ==============-->
 
         <!--============== Footer Section Start ==============-->
@@ -1065,10 +1274,10 @@
                         <div class="footer-widget footer-nav mb-4">
                             <h3 class="widget-title mb-4">Quick Links</h3>
                             <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Products</a></li>
-                                <li><a href="#">Brands</a></li>
-                                <li><a href="#">Contact us</a></li>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="product.html">Products</a></li>
+                                <li><a href="manufacture.html">Manufactures</a></li>
+                                <li><a href="contact.html">Contact us</a></li>
                             </ul>
                         </div>
                     </div>
@@ -1216,7 +1425,39 @@
         <!--============== Modal End ==============-->
 
     </div>
-
+    <!-- <div class="sticky-container">
+        <ul class="sticky">
+            <li>
+                <p><a href="{{ url('login') }}">Contact Us</a></p>
+                <span href="#" id="chatbot">
+                    <i class="fa-solid fa-comment-dots"></i>
+                </span>            </li>
+            <li>
+                <p><a href="{{ url('register') }}">WhatsApp</a></p>
+                <span href="#" id="chatbot">
+                    <i class="fa-solid fa-comment-dots"></i>
+                </span>
+            </li>
+            <li>
+                <p><a href="{{ url('contact-us') }}">Contact Us</a></p>
+                <span href="#" id="chatbot">
+                    <i class="fa-solid fa-comment-dots"></i>
+                </span>
+            </li>
+        </ul>
+    </div> -->
+    <div class="sticky-container">
+        <ul class="sticky">
+            <li>
+                <p><a href="contact.html">Contact Us</a></p>
+                <img src="https://cdn4.iconfinder.com/data/icons/leto-devices-1/64/phone_telephone_contact-512.png" style="width:20px">
+            </li>
+            <li>
+                <p><a href="#">Whatsapp </a></p>
+                <img src="https://cdn3.iconfinder.com/data/icons/social-media-logos-flat-colorful/2048/5302_-_Whatsapp-1024.png" style="width:20px">
+            </li>
+        </ul>
+    </div>
     <!-- Javascript Files -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/greensock.js"></script>
@@ -1268,22 +1509,23 @@
 
             function animateElements() {
                 elements.forEach(element => {
-                    if (isElementInViewport(element) && !element.classList.contains('visible')) {
+                    // if (isElementInViewport(element) && !element.classList.contains('visible')) {
+                    //     element.classList.add('visible');
+                    // }
+                    if (isElementInViewport(element)) {
                         element.classList.add('visible');
+                    } else {
+                        element.classList.remove('visible');
                     }
                 });
             }
 
-            // Initial animation with a delay to account for possible layout shifts
             setTimeout(animateElements, 100);
 
-            // Animate elements on scroll
             window.addEventListener('scroll', animateElements);
 
-            // Animate elements on resize
             window.addEventListener('resize', animateElements);
 
-            // Check periodically for the first few seconds
             let checkCount = 0;
             const intervalId = setInterval(() => {
                 animateElements();
@@ -1291,10 +1533,8 @@
                 if (checkCount >= 10) clearInterval(intervalId);
             }, 200);
 
-            // Final check after all resources have loaded
             window.addEventListener('load', () => {
                 animateElements();
-                // One last check after a short delay
                 setTimeout(animateElements, 500);
             });
         });
