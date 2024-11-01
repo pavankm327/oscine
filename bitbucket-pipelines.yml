@@ -2,10 +2,9 @@ pipelines:
   branches:
     dev:
       - step:
-          name: 'Sync Bitbucket Dev to GitHub Dev'
+          name: 'Sync Bitbucket Dev to GitHub New Branch'
           script:
             - git remote add github "https://pavankm327:${GITHUB_TOKEN}@github.com/pavankm327/oscine.git"
-            - git fetch github dev  # Fetch the dev branch from GitHub
-            - git checkout dev
-            - git rebase github/dev  # Rebase the current dev onto GitHub dev
-            - git push github dev  # Push the Bitbucket dev branch to GitHub dev
+            - git fetch github  # Fetch all branches from GitHub
+            - git checkout dev  # Switch to the Bitbucket dev branch
+            - git push github dev:bitbucket-dev  # Push the Bitbucket dev branch to a new branch on GitHub
