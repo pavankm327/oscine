@@ -12,6 +12,10 @@ pipelines:
           name: 'Mirror to GitHub'
           script:
           - git remote add github "https://pavankm327:${GITHUB_TOKEN}@github.com/pavankm327/oscine.git"
+          - git fetch github  # Fetch changes from GitHub
+          - git merge github/master --allow-unrelated-histories  # Merge changes from GitHub into Bitbucket branch
+          - git push -u github --all  # Push all branches to GitHub
+          - git push -u github --tags  # Push all tags to GitHub
           - git push -u github --all
           - git push -u github --tags
       
