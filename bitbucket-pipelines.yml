@@ -1,0 +1,17 @@
+# This is an example Starter pipeline configuration
+# Use a skeleton to build, test and deploy using manual and parallel steps
+# -----
+# You can specify a custom docker image from Docker Hub as your build environment.
+
+image: atlassian/default-image:3
+
+pipelines:
+  default:
+    - parallel:
+      - step:
+          name: 'Mirror to GitHub'
+          script:
+          - git remote add github "https://pavankm327:${GITHUB_TOKEN}@github.com/pavankm327/oscine.git"
+          - git push -u github --all
+          - git push -u github --tags
+      
